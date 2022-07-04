@@ -1,0 +1,1 @@
+<div class="footer-title"><a href="/for_customers/">Клиентам</a></div>

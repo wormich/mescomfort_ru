@@ -1,0 +1,309 @@
+.wrap {
+    max-width: 980px; 	
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap .impaired {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-decoration: underline;
+    color: #000;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 16px;
+
+}
+.wrap .impaired:before {
+        content: "";
+        background-image: url(img/blind-icon.png);
+        width: 18px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 5px;
+
+    }
+
+.wrap .anketa {
+	  position: absolute;
+	  right: 230px;
+	  top: 10px;
+	  text-decoration: underline;
+	  color: #000;
+	  cursor: pointer;
+	  z-index: 10;
+	  font-size: 16px;
+	}
+
+.wrap .anketa:before {
+	  content: "";
+	  width: 10px;
+	  height: 11px;
+	  background: url(img/anket.png) no-repeat;
+	  display: block;
+	  position: absolute;
+	  top: 3px;
+	  left: -16px;
+	}
+
+.wrap .anketa:hover {
+	  color: #000;
+	  text-decoration: none;
+	}
+	
+@media only screen and (max-width: 500px) {
+	.wrap { padding-bottom: 20px }
+	.wrap .impaired { left: 20px }
+	.wrap .anketa { right: 20px }
+}	
+	
+.blind-version-block, .blind-version-block * { box-sizing: content-box }
+.whiteblack .downloads i, .blackwhite .downloads i, .blue .downloads i  { display: none }
+.whiteblack .downloads ul li a, .blackwhite .downloads ul li a, .blue .downloads ul li a { padding-left: 0 }
+
+.blind-version-block { height: 96px; }
+.blind-version-inner { height: 96px; max-width: 960px; margin: 0 auto; position: relative; min-width: 320px }
+.blind-version-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 400 }
+
+.whiteblack .blind-version-fixed { background: #fff; border-bottom: 2px solid #000; }
+.blackwhite .blind-version-fixed { background: #000; color: #fff; border-bottom: 2px solid #fff; }
+.blue .blind-version-fixed { background: #9dd1ff; color: #063462; border-bottom: 2px solid #063462; }
+
+/*color*/
+.blind-version-block .color-block { float: left; font-size: 0; padding: 8px 45px 0 0 }
+.blind-version-block .color-block .name { display: inline-block; vertical-align: middle; font-size: 16px; padding-right: 9px }
+.blind-version-block .color-block .ico { display: inline-block; vertical-align: middle; width: 28px; height: 28px; border-radius: 3px; margin-right: 10px; position: relative; cursor: pointer }
+.blind-version-block .color-block .ico.sel { cursor: default }
+.blind-version-block .color-block .ico.sel i { position: absolute; width: 10px; height: 7px; left: 8px; }
+
+.whiteblack .blind-version-block .color-block .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; }
+.whiteblack .blind-version-block .color-block .wb { border: 1px solid #000; background: #fff url(img/colors.png) no-repeat 4px 8px }
+.whiteblack .blind-version-block .color-block .bw { border: 1px solid #000; background: #000 url(img/colors.png) no-repeat -36px 8px }
+.whiteblack .blind-version-block .color-block .blue { border: 1px solid #063462; background: #9dd1ff url(img/colors.png) no-repeat -76px 8px }
+.whiteblack .blind-version-block .color-block .ico.sel i  { bottom: -7px }
+
+.blackwhite .blind-version-block .color-block .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; }
+.blackwhite .blind-version-block .color-block .wb { border: 1px solid #fff; background: #fff url(img/colors.png) no-repeat 4px 8px }
+.blackwhite .blind-version-block .color-block .bw { border: 1px solid #fff; background: #000 url(img/colors.png) no-repeat -36px 8px }
+.blackwhite .blind-version-block .color-block .blue { border: 1px solid #063462; background: #9dd1ff url(img/colors.png) no-repeat -76px 8px }
+.blackwhite .blind-version-block .color-block .ico.sel i  { bottom: -8px }
+
+.blue .blind-version-block .color-block .ico.sel i { background: url(img/blarr.png) no-repeat 0 0; }
+.blue .blind-version-block .color-block .wb { border: 1px solid #000; background: #fff url(img/colors.png) no-repeat 4px 8px }
+.blue .blind-version-block .color-block .bw { border: 1px solid #000; background: #000 url(img/colors.png) no-repeat -36px 8px }
+.blue .blind-version-block .color-block .blue { border: 1px solid #063462; background: #9dd1ff url(img/colors.png) no-repeat -76px 8px }
+.blue .blind-version-block .color-block .ico.sel i  { bottom: -7px }
+/*eof_color*/
+
+/*size*/
+.blind-version-block .size-block { float: left; font-size: 0; padding: 8px 45px 0 0 }
+.blind-version-block .size-block .name { display: inline-block; vertical-align: middle; font-size: 16px; padding-right: 9px }
+.blind-version-block .size-block .ico { display: inline-block; vertical-align: middle; width: 28px; height: 28px; border-radius: 3px; margin-right: 10px; position: relative; cursor: pointer; background: none; line-height: normal }
+.blind-version-block .size-block b { text-transform: uppercase; position: absolute; }
+.blind-version-block .size-block .size1 b { font-size: 16px; top: 4px; left: 8px }
+.blind-version-block .size-block .size2 b { font-size: 20px; top: 2px; left: 7px }
+.blind-version-block .size-block .size3 b { font-size: 24px; top: 0; left: 6px }
+.blind-version-block .size-block .ico.sel { cursor: default }
+.blind-version-block .size-block .ico.sel i { position: absolute; width: 10px; height: 7px; left: 8px; }
+
+.whiteblack .blind-version-block .size-block .ico { border: 1px solid #fff; }
+.whiteblack .blind-version-block .size-block .ico.sel { border-color: #000 }
+.whiteblack .blind-version-block .size-block .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; bottom: -7px }
+
+.blackwhite .blind-version-block .size-block .ico { border: 1px solid #000; }
+.blackwhite .blind-version-block .size-block .ico.sel { border-color: #fff }
+.blackwhite .blind-version-block .size-block .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; bottom: -8px }
+
+.blue .blind-version-block .size-block .ico { border: 1px solid #9dd1ff; }
+.blue .blind-version-block .size-block .ico.sel { border-color: #063462 }
+.blue .blind-version-block .size-block .ico.sel i { background: url(img/blarr.png) no-repeat 0 0; bottom: -7px }
+
+/*eof_size*/
+
+/*interval*/
+.blind-version-block .interval-block { float: left; font-size: 0; padding: 8px 45px 0 0 }
+.blind-version-block .interval-block .name { display: inline-block; vertical-align: middle; font-size: 16px; padding-right: 9px }
+.blind-version-block .interval-block .ico { display: inline-block; vertical-align: middle; width: 28px; height: 28px; border-radius: 3px; margin-right: 10px; position: relative; cursor: pointer }
+.blind-version-block .interval-block .ico.sel { cursor: default }
+.blind-version-block .interval-block .ico.sel i { position: absolute; width: 10px; height: 7px; left: 8px; }
+
+.whiteblack .blind-version-block .interval-block .ico { border: 1px solid #000; }
+.whiteblack .blind-version-block .interval-block .size1 { background: url(img/interval.png) no-repeat 8px 6px }
+.whiteblack .blind-version-block .interval-block .size2 { background: url(img/interval.png) no-repeat -32px 6px }
+.whiteblack .blind-version-block .interval-block .size3 { background: url(img/interval.png) no-repeat -72px 6px }
+.whiteblack .blind-version-block .interval-block .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; bottom: -7px }
+
+.blackwhite .blind-version-block .interval-block .ico { border: 1px solid #fff; }
+.blackwhite .blind-version-block .interval-block .size1 { background: #fff url(img/interval.png) no-repeat 8px 6px }
+.blackwhite .blind-version-block .interval-block .size2 { background: #fff url(img/interval.png) no-repeat -32px 6px }
+.blackwhite .blind-version-block .interval-block .size3 { background: #fff url(img/interval.png) no-repeat -72px 6px }
+.blackwhite .blind-version-block .interval-block .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; bottom: -8px }
+
+.blue .blind-version-block .interval-block .ico { border: 1px solid #063462; }
+.blue .blind-version-block .interval-block .size1 { background: #9dd1ff url(img/interval.png) no-repeat 8px -32px }
+.blue .blind-version-block .interval-block .size2 { background: #9dd1ff url(img/interval.png) no-repeat -32px -32px }
+.blue .blind-version-block .interval-block .size3 { background: #9dd1ff url(img/interval.png) no-repeat -72px -32px }
+.blue .blind-version-block .interval-block .ico.sel i { background: url(img/blarr.png) no-repeat 0 0; bottom: -7px }
+
+/*eof_interval*/
+
+
+/*font*/
+.blind-version-block .font-block { position: absolute; left: 0; bottom: 8px; font-size: 0 }
+.blind-version-block .font-block .name { display: inline-block; vertical-align: middle; font-size: 16px; padding-right: 9px }
+.blind-version-block .font-block .ico { display: inline-block; vertical-align: middle; font-size: 16px; margin-right: 11px; padding: 2px 7px; border-radius: 2px; cursor: pointer; position: relative }
+.blind-version-block .font-block .ico.sel i { position: absolute; width: 10px; height: 7px; left: 42%; }
+
+.blackwhite .blind-version-block .font-block .ico { background: #000; color: #fff; border: 1px solid #fff }
+.blackwhite .blind-version-block .font-block .ico.sel { background: #000; color: #fff }
+.blackwhite .blind-version-block .font-block  .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; bottom: -8px }
+
+.whiteblack .blind-version-block .font-block .ico { background: #fff; color: #000; border: 1px solid #000 }
+.whiteblack .blind-version-block .font-block .ico.sel { background: #fff; color: #000 }
+.whiteblack .blind-version-block .font-block  .ico.sel i { background: url(img/wbarr.png) no-repeat 0 0; bottom: -7px }
+
+.blue .blind-version-block .font-block .ico { background: #9dd1ff; color: #063462; border: 1px solid #063462 }
+.blue .blind-version-block .font-block .ico.sel { background: #9dd1ff; color: #063462 }
+.blue .blind-version-block .font-block  .ico.sel i { background: url(img/blarr.png) no-repeat 0 0; bottom: -7px }
+
+/*eof_font*/
+
+/*img*/
+.blind-version-block .img-block { position: absolute; top: 0; right: 0; font-size: 0; padding: 8px 0 0 0; }
+.blind-version-block .img-block .name { display: inline-block; vertical-align: middle; font-size: 16px; padding-right: 9px }
+.blind-version-block .img-block .toggle { display: inline-block; vertical-align: middle; width: 78px; height: 28px; border-radius: 3px; margin-right: 0; position: relative; cursor: pointer }
+.blind-version-block .img-block .toggle b { position: absolute; top: 5px; left: 2px; font-weight: normal; font-size: 14px; }
+.blind-version-block .img-block .toggle.noshow b { left: 44px }
+
+.whiteblack .blind-version-block .img-block .toggle { border: 1px solid #000; background: url(img/blind-img.png) no-repeat 100% 0 }
+.whiteblack .blind-version-block .img-block .toggle.noshow { background: url(img/blind-img.png) no-repeat 0 0 }
+
+.blackwhite .blind-version-block .img-block .toggle { border: 1px solid #fff; background: #fff url(img/blind-img.png) no-repeat 100% 0; color: #000!important }
+.blackwhite .blind-version-block .img-block .toggle.noshow { background: #fff url(img/blind-img.png) no-repeat 0 0 }
+
+.blue .blind-version-block .img-block .toggle { border: 1px solid #063462; background: #9dd1ff url(img/blind-img-bl.png) no-repeat 100% 0; color: #063462 }
+.blue .blind-version-block .img-block .toggle.noshow { background: #9dd1ff url(img/blind-img-bl.png) no-repeat 0 0 }
+/*eof_img*/
+
+.blind-version-block .reset { position: absolute; bottom: 12px; right: 0; font-size: 16px; cursor: pointer }
+.blackwhite .blind-version-block .reset { border-bottom: 1px solid #fff; }
+.whiteblack .blind-version-block .reset { border-bottom: 1px solid #000; }
+.blue .blind-version-block .reset { border-bottom: 1px solid #063462; }
+
+.blind-underscribe { display: none; font-size: 16px; }
+.blind-underscribe .title { display: block; font-weight: bold; padding-bottom: 2px; font-size: 18px }
+
+body.times { font-family: 'Times New Roman' }
+
+/*===========================*/
+/*========whiteblack=========*/
+.whiteblack { background: #fff; color: #000; font-family: Arial }
+.whiteblack a { color: #000; }
+.whiteblack a:hover{ color: #000; text-decoration: none }
+
+.whiteblack h1 { color: #000 }  
+.whiteblack h2 { color: #000 }  
+.whiteblack h3 { color: #000 }  
+.whiteblack h4 { color: #000 }  
+.whiteblack h6 { color: #000 }
+}
+/*===========================*/
+
+
+/*========blackwhite=========*/
+.blackwhite { background: #000; color: #fff; font-family: Arial }
+.blackwhite a { color: #fff; }
+.blackwhite a:hover{ color: #fff; text-decoration: none }
+
+.blackwhite h1 { color: #fff }	
+.blackwhite h2 { color: #fff }	
+.blackwhite h3 { color: #fff }	
+.blackwhite h4 { color: #fff }	
+.blackwhite h6 { color: #fff }
+/*===========================*/
+
+/*========blue=========*/
+.blue { background: #9dd1ff; font-family: Arial; color: #063462 }
+.blue a { color: #063462; }
+.blue a:hover{ text-decoration: none }
+
+.blue h1 { color: #063462 }	
+.blue h2 { color: #063462 }	
+.blue h3 { color: #063462 }	
+.blue h4 { color: #063462 }	
+.blue h6 { color: #063462 }
+/*=================*/
+
+
+
+.noshow img { display: none }
+
+/*=================*/
+
+/*========s16=========*/
+.s16 { font-size: 110%; }
+.s16 ul li { font-size: 18px }
+.s16 p { font-size: 20px; }
+
+
+/*=================*/
+
+/*========s18=========*/
+.s18 { font-size: 120%; }
+.s18 ul li { font-size: 20px }
+.s18 p { font-size: 22px; }
+
+
+.w2 { letter-spacing: 1px }
+.w3 * { letter-spacing: 2px }
+
+.w2 .blind-version-block *, .w3 .blind-version-block * { letter-spacing: normal } 
+
+
+@media only screen and (max-width: 970px) {	
+	
+	.blind-version-block .color-block { padding: 8px 10px 0 10px; width: 30% }
+	.blind-version-block .color-block .name { display: none } 
+	.blind-version-block .color-block .ico { margin-right: 2px }
+	.blind-version-block .size-block { padding: 8px 0 0 0; width: 30% }
+	.blind-version-block .size-block .name { display: none } 
+	.blind-version-block .size-block .ico { margin-right: 2px }
+	.blind-version-block .interval-block { float: left; font-size: 0; padding: 8px 10px 0 0; }
+	.blind-version-block .interval-block .name { display: none } 
+	.blind-version-block .interval-block .ico { margin-right: 2px }
+	.blind-version-block .font-block { position: absolute; left: 10px; bottom: 8px; font-size: 0 }
+	.blind-version-block .font-block .name { display: none } 
+	.blind-version-block .font-block .ico { margin-right: 2px }
+	.blind-version-block .img-block { position: relative; top: 0px; right: auto; left: 0; padding: 8px 10px 0 0; float: right; }
+	.blind-version-block .img-block .name { display:none }
+	.blind-version-block .reset { right: 10px }
+}	
+
+@media only screen and (max-width: 790px) {
+	.blind-version-block .color-block { width: 25% }
+	.blind-version-block .size-block { width: 25% }
+}	
+
+@media only screen and (max-width: 500px) {	
+	.blind-version-block { height: 126px; margin-bottom: -10px }
+	.blind-version-inner { height: 126px;   }
+	.blind-version-block .color-block { width: 37% }
+	.blind-version-block .size-block { width: auto }
+	.blind-version-block .interval-block { float: right; padding: 8px 10px 0 0; }
+	.blind-version-block .img-block { padding: 18px 10px 0 0; float: none; text-align: right; clear: both }
+}
+
+@media only screen and (max-width: 380px) {	
+	.blind-version-block .color-block { width: auto }
+}
+
+
+
+
+
+
+
+
+
+

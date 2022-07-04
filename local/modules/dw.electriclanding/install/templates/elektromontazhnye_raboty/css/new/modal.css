@@ -1,0 +1,625 @@
+.hidden {
+    display: none!important;
+}
+
+.modal {
+    position: fixed;
+    z-index: 21;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 	
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+	display: flex; 
+	align-items: center; 
+	justify-content: center
+}
+
+.modal-content { margin: 20px auto; max-width: 1000px; flex-basis: 1000px }
+#office-modal .modal-content { width: 1000px; max-width: auto; margin: 0 }
+
+.modal-content img { max-width: 100%; height: auto !important }
+
+.modal-header {
+    display: flex;
+    align-items: center;
+}
+
+.tab-link {
+    background-color: #EBF2F8;
+    color: #737373;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 25px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+}
+
+    .tab-link.current {
+        background-color: #fff;
+        color: #000;
+        cursor: default;
+    }
+
+.tab-close {
+    flex-grow: 20;
+    text-align: right; 
+	margin-right: 20px
+}
+
+.modal-btn-close {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.noshow .modal-btn-close {
+    display: inline!important;
+}
+
+.modal-body {
+    background-color: #fff;
+}
+
+#filter {
+    display: none;
+}
+
+    #filter span {
+        color: #0f76df;
+        border-bottom: 1px dashed #0f76df;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+.bordered {
+    display: flex;
+    padding: 20px 30px;
+    border-bottom: 1px solid #EBF2F8;
+}
+
+.checkbox {
+    margin-right: 20px;
+    color: #747b85;
+}
+
+.selects {
+    display: flex;
+}
+
+.selects > select {
+    margin-right: 20px;
+}
+
+.wrap {
+    display: flex;
+    padding: 20px 30px;
+}
+
+    .wrap > div {
+        display: flex;
+        align-items: center;
+    }
+
+.icons input[type='checkbox'] {
+    display: none;
+}
+
+.icons label {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #D9DEE2;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.icons #eye + label {
+    background-image: url(../new/img/eye.png);
+}
+
+.icons #ear + label {
+    background-image: url(../new/img/ear.png);
+}
+
+.icons #stick + label {
+    background-image: url(../new/img/stick.png);
+}
+
+.icons #disable + label {
+    background-image: url(../new/img/disable.png);
+}
+
+.icons #eye:checked + label {
+    background-image: url(../new/img/eye-b.png);
+}
+
+.icons #ear:checked + label {
+    background-image: url(../new/img/ear-b.png);
+}
+
+.icons #stick:checked + label {
+    background-image: url(../new/img/stick-b.png);
+}
+
+.icons #disable:checked + label {
+    background-image: url(../new/img/disable-b.png);
+}
+
+select {
+    border: 1px solid #D9DEE2;
+    color: #747b85;
+    padding: 13px 8px;
+    width: 100%;
+    min-width: 195px;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+.option-content {
+    height: 500px;
+    max-width: 1000px;
+}
+
+#officeMap {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#officeMap * {
+    transition: none;
+}
+
+#officeList {
+    background-color: #fff;
+    padding: 60px 0 40px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#map-container {
+    position: relative;
+}
+
+#options {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 25;
+}
+
+    .option {
+        color: #737373; 
+        padding: 10px 15px;
+        background-color: #fff;
+        border: 1px solid #D9DEE2;
+        cursor: pointer;
+    }
+
+    .option.active {
+        background-color: #0f76df;
+        border-color: #0f76df;
+        color: #fff;
+        cursor: default;
+    }
+
+#officeTable {
+    width: 100%;
+    height: 440px;
+    overflow-y: auto;
+    padding-right: 30px;
+}
+
+.officeItem {
+    border-bottom: 1px solid #EBF2F8;
+    color: #747b85;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Calibri;
+    display: flex;
+    min-height: 110px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+    .officeItem > .officeRegion,
+    .officeItem > .row{
+        width: 20%;
+    }
+
+    .officeItem > .officeInfo {
+        width: 60%;
+        padding: 0 60px;
+    }
+
+    .officeItem span {
+      /*  display: none; */
+    }
+
+
+.officeRegion small:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.red-line:before {
+    background-image: url(../new/img/red-line.png);
+}
+
+.blue-line:before {
+    background-image: url(../new/img/blue-line.png);
+}
+
+.violet-line:before {
+    background-image: url(../new/img/violet-line.png);
+}
+
+.green-line:before {
+    background-image: url(../new/img/green-line.png);
+}
+
+.orange-line:before {
+    background-image: url(../new/img/orange-line.png);
+}
+
+.balloon {
+    color: #747b85;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Calibri;
+}
+
+.balloonInfo {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.balloonInfo small,
+.balloonInfo span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.balloonInfo small {
+    padding: 5px 0 10px 0;
+}
+
+.balloonAdress {
+    margin: 5px 0 10px 0;
+}
+
+.noscroll {
+    /*overflow: hidden;*/
+}
+
+.officeIcons {
+    margin-top: 15px;
+    margin-left: 1px;
+}
+
+.officeIcons > div {
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    border: 4px solid #fff;
+    outline: 1px solid #e0e4e7;
+    margin-right: 5px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.officeIcons .eyeIcon {
+    background-image: url(../new/img/eye-b.png);
+}
+
+.officeIcons .earIcon {
+    background-image: url(../new/img/ear-b.png);
+}
+
+.officeIcons .stickIcon {
+    background-image: url(../new/img/stick-b.png);
+}
+
+.officeIcons .disableIcon {
+    background-image: url(../new/img/disable-b.png);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-balloon {
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+    width: 100%;
+}
+    .row-balloon .officeIcons {
+        margin-left: 20px;
+        margin-top: 1px;
+	flex: none;
+    }
+
+.noshow .icons label {
+    color: #fff;
+    background-color: #000;
+    background-image: none !important;
+    width: auto;
+    padding: 15px;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.noshow .wrap {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+    .noshow .wrap .icons {
+        position: absolute;
+        bottom: -43px;
+        left: 30px;
+    }
+
+    .noshow .wrap .checks {
+        display: flex;
+    }
+
+.visaIcon {
+    height: 20px;
+    width: 16px;
+    background: url(img/visa.png) no-repeat center;
+    display: inline-block;
+    float: left;
+    margin-left: -22px;
+    margin-right: 7px;
+}
+
+.balloonInfo .visaIcon {
+    height: 12px;
+    float: none;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.blackwhite .modal-body,
+.blackwhite #officeList,
+.blackwhite .option,
+.blackwhite select,
+.blackwhite .tab-link.current {
+	background-color: #000!important;
+}
+
+.blue .modal-body,
+.blue #officeList,
+.blue .option,
+.blue select,
+.blue .tab-link.current {
+	background-color: #9dd1ff!important;
+}
+
+.whiteblack .option.active,
+.blackwhite .option {
+	background-color: #000!important;
+	color: #fff!important;
+}
+
+.whiteblack .option,
+.blackwhite .option.active {
+	background-color: #fff!important;
+	color: #000!important;
+}
+
+.blue .option {	
+	background-color: #9dd1ff!important;
+	color: #063462!important;
+}
+
+.blue .option.active {
+	background-color: #063462!important;
+	color: #9dd1ff!important;
+}
+
+.blackwhite select {
+	color: #fff!important;
+}
+
+.blackwhite .tab-link{
+	background-color: #333!important;
+}
+
+.blackwhite #office-modal,
+.whiteblack #office-modal,
+.blue #office-modal {
+	padding-top: 96px!important;
+}
+
+.modal .top-options {
+    display: none;
+}
+
+.blackwhite .ymaps-2-1-62-balloon__content * {
+	color: #000!important;
+}
+
+.blackwhite .modal-content {
+    border: 1px solid #fff; background: #000
+}
+
+.blackwhite .icons label {
+    background-color: #000;
+}
+
+.blackwhite .icons > input + label,
+.whiteblack .icons > input:checked + label,
+.blackwhite .officeIcons > div {
+    background-color: #000;
+    color: #fff;
+}
+
+.whiteblack .icons > input + label,
+.blackwhite .icons > input:checked + label,
+.whiteblack .officeIcons > div {
+    background-color: #fff;
+    color: #000;
+}
+
+.blackwhite .icons #eye + label,
+.whiteblack .icons #eye:checked + label,
+.blackwhite .officeIcons .eyeIcon {
+    background-image: url(../new/img/eye-w.png);
+}
+
+.blackwhite .icons #ear + label,
+.whiteblack .icons #ear:checked + label,
+.blackwhite .officeIcons .earIcon {
+    background-image: url(../new/img/ear-w.png);
+}
+
+.blackwhite .icons #stick + label,
+.whiteblack .icons #stick:checked + label,
+.blackwhite .officeIcons .stickIcon {
+    background-image: url(../new/img/stick-w.png);
+}
+
+.blackwhite .icons #disable + label,
+.whiteblack .icons #disable:checked + label,
+.blackwhite .officeIcons .disableIcon {
+    background-image: url(../new/img/disable-w.png);
+}
+
+.whiteblack .icons #eye+ label,
+.blackwhite .icons #eye:checked + label,
+.whiteblack .officeIcons .eyeIcon {
+    background-image: url(../new/img/eye-black.png);
+}
+
+.whiteblack .icons #ear+ label,
+.blackwhite .icons #ear:checked + label,
+.whiteblack .officeIcons .earIcon {
+    background-image: url(../new/img/ear-black.png);
+}
+
+.whiteblack .icons #stick+ label,
+.blackwhite .icons #stick:checked + label,
+.whiteblack .officeIcons .stickIcon {
+    background-image: url(../new/img/stick-black.png);
+}
+
+.whiteblack .icons #disable+ label,
+.blackwhite .icons #disable:checked + label,
+.whiteblack .officeIcons .disableIcon {
+    background-image: url(../new/img/disable-black.png);
+}
+
+.blue .icons #eye + label,
+.blue .icons #ear + label,
+.blue .icons #stick + label,
+.blue .icons #disable + label {
+    background-color: #9dd1ff;
+    color: #063462;
+}
+
+.blue .icons #eye:checked + label,
+.blue .icons #ear:checked + label,
+.blue .icons #stick:checked + label,
+.blue .icons #disable:checked + label {
+    background-color: #063462;
+    color: #9dd1ff;
+}
+
+.blue .icons #eye + label,
+.blue .officeIcons .eyeIcon {
+    background-image: url(../new/img/eye-dblue.png);
+}
+.blue .icons #ear + label,
+.blue .officeIcons .earIcon {
+    background-image: url(../new/img/ear-dblue.png);
+}
+.blue .icons #stick + label,
+.blue .officeIcons .stickIcon {
+    background-image: url(../new/img/stick-dblue.png);
+}
+.blue .icons #disable + label,
+.blue .officeIcons .disableIcon {
+    background-image: url(../new/img/disable-dblue.png);
+}
+
+.blue .icons #eye:checked + label {
+    background-image: url(../new/img/eye-blue.png);
+}
+.blue .icons #ear:checked + label {
+    background-image: url(../new/img/ear-blue.png);
+}
+.blue .icons #stick:checked + label {
+    background-image: url(../new/img/stick-blue.png);
+}
+.blue .icons #disable:checked + label {
+    background-image: url(../new/img/disable-blue.png);
+}
+
+.whiteblack .officeRegion small:before,
+.blackwhite .officeRegion small:before {
+    background-image: url(../new/img/black-line.png);
+}
+
+.blackwhite .officeRegion small:before {
+    filter: invert(100%);
+}
+
+.blue .officeRegion small:before {
+    background-image: url(../new/img/black-line.png);
+}
+
+.whiteblack .officeIcons > div {
+    outline-color: #000!important;
+    border-color: #fff!important;
+}
+
+.blackwhite .officeIcons > div {
+    outline-color: #fff!important;
+    border-color: #000!important;
+}
+
+.blue .officeIcons > div {
+    outline-color: #063462!important;
+    border-color: #9dd1ff!important;
+    background-color: #9dd1ff!important;
+}
+
+#officeTable .officeInfo small {
+    margin-left: 10px;
+}
+
+.blackwhite #officeMap div.balloonAdress,
+.blackwhite #officeMap div.balloonInfo > div,
+.blackwhite #officeMap div.balloonInfo span {
+    color: #000!important;
+}
+

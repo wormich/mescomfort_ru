@@ -1,0 +1,305 @@
+@media (max-width: 1100px) {
+    .modal-body label {
+        font-size: 14px;
+    }
+
+    .tab-close {
+      /*  display: none; */
+	width: 32px;
+	flex-grow: 0;
+	padding-left: 10px;
+    } 
+
+    .modal-content {
+        margin: 10px;
+		max-width: 90vw;
+		max-height: 70vh;
+		height: 70vh;
+    }
+
+    #service-modal .modal-content-text,
+	#popap-modal .modal-content-text {
+		max-height: calc(100% - 76px);
+	}
+
+    #office-modal .top-options {
+        display: none;
+        background: none;
+    }
+
+        #office-modal .top-options .office-title span {
+            color: #fff!important;
+            border-bottom-color: #fff!important;
+        }
+
+        #office-modal .top-options .ar-trigger {
+            border-top-color: #fff;
+        }
+
+        #office-modal .top-options .office-title:before {
+            background: url(img/top-map-w.png);
+        }
+
+    .wrap {
+        flex-direction: column;
+    }
+
+    .wrap > div {
+        justify-content: space-between;
+    }
+
+    .checks {
+        display: flex;
+    }
+
+    .selects > select {
+        margin-right: 0;
+    }
+
+    #regions {
+        margin-right: 10px;
+    }
+
+    #subways {
+        margin-left: 10px;
+    }
+
+    .checks, .icons {
+        margin-top: 20px;
+    }
+
+    .officeItem {
+        display: block;
+        height: auto;
+    }
+
+    .officeItem > .row {
+        width: 100%;
+        padding-bottom: 15px;
+        flex-direction: row;
+    }
+
+        .officeItem > .officeInfo {
+            width: 75%;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .officeItem > .officeRegion {
+            width: 25%;
+            float: right;
+            display: inline-block;
+        }
+
+    .officeIcons {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .row-balloon {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    .noshow .wrap {
+        margin-bottom: 0;
+    }
+
+        .noshow .wrap .icons {
+            position: static;
+        }
+
+        .noshow .wrap > div {
+            display: block;
+        }
+
+        .noshow .wrap .selects {
+            display: flex;
+        }
+    #service-modal .tab-close,
+	#popap-modal .tab-close {
+		width: calc(100% - 22px);
+	}
+}
+
+
+@media (max-width: 670px) {
+    .modal-content {
+        margin: 10px;
+    }
+
+    .icons label {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-left: 5px;
+    }
+
+    .tab-link {
+        font-size: 10px;
+        padding: 15px;
+    }
+
+    #filter {
+        display: flex;
+        align-items: center;
+        padding: 18px 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+        #filter.active {
+            border-bottom-color: #0f76df;
+            position: relative;
+        }
+
+            #filter.active::before, #filter.active::after {
+                content: '';
+                position: absolute;
+                left: 42px;
+                bottom: 0;
+                border: 10px solid transparent;
+                border-bottom: 10px solid #0f76df;
+            }
+
+            #filter.active::after {
+                border-bottom: 10px solid #fff;
+                bottom: -1px;
+            }
+
+    #filter .filter-ico {
+ 	background-image: url(../new/img/filter-sprite.png);
+	height: 13px;
+	width: 14px;
+	background-size: cover;
+        margin-right: 5px;
+	border-bottom: none;
+	background-position-x: 0px;
+	transition: none;
+    }
+
+    #options {
+        left: 20px;
+        top: 10px;
+    }
+
+    .bordered {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .checkbox,
+    .selects > select {
+        margin-bottom: 20px;
+    }
+
+        .checkbox:last-child {
+            margin-bottom: 0;
+        }
+
+    .selects {
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+    }
+
+    .icons {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .modal-body {
+        position: relative;
+    }
+
+    .checks, .icons {
+        margin-top: 0;
+    }
+
+    .checks {
+        padding: 0 20px;
+    }
+
+    .checks {
+        flex-direction: column;
+    }
+
+    .wrap {
+        padding: 0;
+    }
+
+    .modal-body .wrap {
+        padding: 0 !important;
+    }
+
+    #regions {
+        margin-right: 0;
+    }
+
+    #subways {
+        margin-left: 0;
+    }
+
+    .modal-body {
+        min-height: 552px;
+    }
+
+    .officeItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        padding-bottom: 0;
+    }
+
+    .row.bx-filter-parameters-box-container {
+    	padding-bottom: 20px;
+    }	
+
+    .row,
+    .officeItem .officeRegion {
+        width: 100%;
+        display: block;
+    }
+
+    .officeInfo small {
+        display: block;
+    }
+
+    .officeIcons {
+        margin-left: 1px;
+        margin-top: 7px;
+    }
+
+    .noshow .wrap .icons {
+        padding: 20px;
+    }
+
+    .balloon {
+    	font-size: 16px;
+    	line-height: 24px;
+		max-width: calc(100vw - 128px);
+    }
+	.clusterbalun {
+		max-width: calc(100vw - 250px);
+	}
+
+    #officeTable .officeInfo small {
+    	margin-left: 0;
+    }
+	#officeList {
+		padding-left: 20px;
+	}
+	#officeTable {
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+.blackwhite #office-modal,
+.whiteblack #office-modal,
+.blue #office-modal {
+	padding-top: 116px!important;
+}
+}

@@ -1,0 +1,53 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+IncludeTemplateLangFile(__FILE__);
+?>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200, user-scalable=no">
+    <title>МЭС-КОМФОРТ - Ремонт любой сложности от профессионалов!</title>
+    <meta name="keywords" content="МЭС-КОМФОРТ" />
+    <meta name="description" content="Капитальный подход к любому клиенту. До 15 июля эскизный дизайн-проект в подарок! Бесплатный выезда мастера по Москвe. Гарантия 2 года. +7 (495) 988-31- 99, Москва и Московская область">
+    <!--    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+    <?$APPLICATION->ShowHead();?>
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/styles.css?v=0.9">
+    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/internal.js"></script>
+
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1106568692689539&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+    <script type="text/javascript">
+        var __cs = __cs || [];
+        __cs.push(["setCsAccount", "VbFewbBHo1saIyZZ4gGIlAPGiettIZkz"]);
+    </script>
+    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NPHP59"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<?$APPLICATION->ShowPanel()?>
+<header class="header">
+    <div class="wrapper cf">
+        <div class="header__logo"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt=""></div>
+        <div class="header__phone"><span class="icon-phone"></span><span class="phone">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/local/includes/section/header/phone.php"
+                    )
+                );?>
+                </b></span><div><a href="#order-popup" class="b-btn open-popup">оставить заявку</a></div></div>
+    </div>
+</header>

@@ -1,0 +1,2014 @@
+.anketa-blind { display:none }
+.whiteblack .anketa-blind, .blackwhite .anketa-blind, .blue .anketa-blind { display: block; text-align: right; padding: 10px 0 }
+.anketa-blind a { position: relative }
+.anketa-blind a:before {
+	  content: "";
+	  width: 10px;
+	  height: 11px;
+	  background: #000 url(img/anket.png) no-repeat;
+	  display: block;
+	  position: absolute;
+	  top: 3px;
+	  left: -16px;
+	}
+
+.hidden_map_items_for_blind_version { display: none }
+
+.opened>div>a {
+    font-weight: 700
+}
+
+.pay-point span {
+    display: none
+}
+
+.content-blind {
+    display: none!important
+}
+
+.hidden_map_items_for_blind_version {
+    max-height: 500px;
+    overflow-y: scroll
+}
+
+.service-block-2__hide {
+    display: none!important
+}
+
+.whiteblack {
+    background: #fff!important;
+    color: #000
+}
+
+.whiteblack * {
+    border-color: #000!important
+}
+
+.whiteblack div {
+    color: #000!important
+}
+
+.whiteblack a {
+    color: #000!important;
+    text-decoration: underline
+}
+
+.whiteblack a:hover {
+    color: #000!important
+}
+
+.whiteblack h1,
+.whiteblack h2,
+.whiteblack h3,
+.whiteblack h4,
+.whiteblack h5,
+.whiteblack p,
+.whiteblack span {
+    color: #000!important
+}
+
+.whiteblack p {
+    font-size: 15px
+}
+
+.whiteblack blockquote,
+.whiteblack blockquote p {
+    color: #000;
+    font-style: normal
+}
+
+.whiteblack blockquote {
+    border-left: 5px solid #000;
+    background: 0 0;
+    padding: 0 0 0 20px
+}
+
+.whiteblack table {
+    border: 3px solid #000;
+    color: #000
+}
+
+.whiteblack td {
+    border: 1px solid #000;
+    color: #000
+}
+
+.whiteblack th {
+    background: #000;
+    color: #fff
+}
+
+.whiteblack .news-block-controls {
+    border: 2px solid #000;
+    background: #fff
+}
+
+.whiteblack .news-block-controls li {
+    font-size: 12px;
+    border-color: #000
+}
+
+.whiteblack .news-block-controls li.active {
+    background: #fff;
+    border: 1px solid #000;
+    border-left: none
+}
+
+.whiteblack .news-block-controls li.active .arrow {
+    background-image: url(img/wb-slider_nav_bg_arrow.png)
+}
+
+.whiteblack .news-block-controls li.active .holes {
+    display: none
+}
+
+.whiteblack .table_compare table tr td {
+    background: #fff;
+    color: #000!important;
+    border: 1px solid #000!important
+}
+
+.whiteblack .news-block-slider li {
+    background: #fff
+}
+
+.whiteblack .slider-item .text {
+    border: 2px solid #000
+}
+
+.whiteblack .read-more .button {
+    background: #000;
+    color: #fff
+}
+
+.whiteblack .read-more .button span {
+    display: none
+}
+
+.whiteblack .read-more a {
+    color: #fff!important;
+    padding-top: 10px
+}
+
+.whiteblack .content-block .date {
+    background: #000!important;
+    color: #fff!important
+}
+
+.whiteblack .content-block .date a {
+    color: #000
+}
+
+.whiteblack nav ul li {
+    padding: 5px 0!important;
+    margin: 0!important;
+    background: 0 0!important
+}
+
+.whiteblack nav ul li a {
+    color: #000!important;
+    line-height: 18px
+}
+
+.whiteblack nav ul li div {
+    padding: 0!important;
+    margin: 0!important;
+    background: 0 0!important
+}
+
+.whiteblack nav ul li li {
+    padding-left: 0!important;
+    margin-left: 20px!important;
+    text-transform: none!important;
+    font-size: 12px;
+    list-style-type: circle
+}
+
+.whiteblack nav ul li li.active>a {
+    font-weight: 700
+}
+
+.whiteblack nav ul li li.active>div {
+    font-weight: 700
+}
+
+.whiteblack nav ul li.special {
+    background-color: #000!important;
+    background-image: url(img/)
+}
+
+.whiteblack nav ul li.special div a {
+    color: #fff!important;
+    padding: 5px 10px!important
+}
+
+.whiteblack .service-block .top {
+    border-color: #000
+}
+
+.whiteblack .service-block:hover {
+    background: #000
+}
+
+.whiteblack .service-block:hover * {
+    color: #fff!important
+}
+
+.whiteblack .service-block:hover .button {
+    background: #fff!important
+}
+
+.whiteblack .service-block:hover .button span {
+    color: #000!important
+}
+
+.whiteblack .service-block a:hover {
+    background: #000
+}
+
+.whiteblack .button.small {
+    background: #000;
+    border-top: none
+}
+
+.whiteblack .button.small span {
+    color: #fff!important
+}
+
+.whiteblack .button.small .arrow {
+    display: none
+}
+
+.whiteblack .tabs-controls {
+    border-color: #fff
+}
+
+.whiteblack .tabs-controls .active {
+    background-color: #000
+}
+
+.whiteblack .tabs-controls .active a {
+    color: #fff!important
+}
+
+.whiteblack .tabs-controls .active a:hover {
+    color: #fff!important
+}
+
+.whiteblack .service-block-2 {
+    border: 1px solid #000
+}
+
+.whiteblack .logo-add a {
+    position: absolute;
+    left: 51px;
+    top: 9px;
+    background-image: url(img/wb-logotip_psk.png);
+    background-size: cover;
+    display: block;
+    width: 100px;
+    height: 25px
+}
+
+.whiteblack .logo-add a img {
+    display: none
+}
+
+.whiteblack .logo a {
+    width: 100%;
+    height: 55px;
+    background-image: url(img/wb-logo_big.png);
+    background-size: cover; 
+	background-size: contain; 
+	background-repeat: no-repeat;
+    display: block
+}
+
+.whiteblack .logo a img {
+    display: none
+}
+
+.whiteblack .search-top input[type=submit] {
+    background-image: url(img/wb-search_top.png)
+}
+
+.whiteblack .search-top input[type=text] {
+    border-color: #000
+}
+
+.whiteblack footer {
+    background: 0 0!important;
+    box-shadow: none!important
+}
+
+.whiteblack footer a {
+    color: #000!important
+}
+
+.whiteblack .footer-dark {
+    background: 0 0!important
+}
+
+.whiteblack .addresses-list li a {
+    background-image: url(img/wb-address_marker.png)!important
+}
+
+.whiteblack .addresses-list li a span {
+    border-color: #000
+}
+
+.whiteblack .addresses-list li a.active {
+    background: 0 0!important
+}
+
+.whiteblack .inform_of_rez_table td {
+    border-color: #000
+}
+
+.whiteblack .inform_of_rez_table .odd {
+    background: 0 0!important
+}
+
+.whiteblack .faq-box a {
+    border-color: #000
+}
+
+.whiteblack .buy-link a {
+    background: #000!important;
+    color: #fff!important
+}
+
+.whiteblack .buy-link a:hover {
+    color: #fff!important
+}
+
+.whiteblack .add-to-compare-list {
+    color: #000!important;
+    background-image: url(img/wb-compare.png)!important
+}
+
+.whiteblack .add-to-compare-list:hover {
+    color: #000!important
+}
+
+.whiteblack .catalog-items .item {
+    border: 1px solid #000
+}
+
+.whiteblack .catalog-items .item .price {
+    background: 0 0
+}
+
+.whiteblack .catalog-items .item .model a {
+    color: #000
+}
+
+.whiteblack .catalog-items .item .model a:hover {
+    color: #000
+}
+
+.whiteblack .catalog-items .item:hover {
+    box-shadow: none
+}
+
+.whiteblack .bx_item_description,
+.whiteblack .item_info_section dl {
+    color: #000
+}
+
+.whiteblack .btn-themes {
+    color: #000;
+    background: #fff
+}
+
+.whiteblack .btn-link {
+    color: #000;
+    background: 0 0
+}
+
+.whiteblack .bx-filter-select-popup label {
+    color: #000
+}
+
+.whiteblack .bx-filter-select-popup label:hover {
+    color: #fff;
+    background: #000
+}
+
+.whiteblack .bx-filter-select-arrow {
+    background-image: url(img/wb-select.png)
+}
+
+.whiteblack .gl_switch.asgrid {
+    background-image: url(img/wb-plit.png)
+}
+
+.whiteblack .gl_switch.aslist {
+    background-image: url(img/wb-list.png)
+}
+
+.whiteblack .gl_switch.asgrid.currentview {
+    background-image: url(img/bw-plit.png);
+    background-color: #000
+}
+
+.whiteblack .gl_switch.aslist.currentview {
+    background-image: url(img/bw-list.png);
+    background-color: #000
+}
+
+.whiteblack .secondary-slider {
+    background: 0 0;
+    box-shadow: none;
+    border: 2px solid #000
+}
+
+.whiteblack .secondary-slider .bx-wrapper {
+    height: auto
+}
+
+.whiteblack .bx_catalog-compare-list {
+    background: 0 0;
+    border: 1px solid #000
+}
+
+.whiteblack .table-procurement .progress .p-bg {
+    border: 1px solid #000;
+    background: 0 0
+}
+
+.whiteblack .table-procurement .progress .p-line {
+    background: #000
+}
+
+.whiteblack .table-procurement .p-value {
+    color: #000
+}
+
+.whiteblack .table-procurement .doc-link,
+.whiteblack .table-procurement .prot-link {
+    background-image: url(img/wb-doc-link.png)
+}
+
+.whiteblack .icon-status-1 {
+    color: #000;
+    background-image: url(img/wb-status-1.png)
+}
+
+.whiteblack .icon-status-0,
+.whiteblack .icon-status-2 {
+    color: #000;
+    background-image: url(img/wb-status-2.png)
+}
+
+.whiteblack .icon-status-3 {
+    color: #000;
+    background-image: url(img/wb-status-3.png)
+}
+
+.whiteblack .errortext,
+.whiteblack .notetext {
+    color: #000
+}
+
+.whiteblack .dev {
+    color: #000;
+    position: relative
+}
+
+.whiteblack .dev img {
+    display: none!important
+}
+
+.whiteblack .dev:after {
+    content: "";
+    background: url(img/wb-logo_2_white.jpg) no-repeat 0 0;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 147px;
+    height: 28px
+}
+
+.whiteblack .service-block img {
+    display: none
+}
+
+.whiteblack .mini-popup {
+    background: #fff!important;
+    color: #000!important;
+    border-color: #000!important
+}
+
+.whiteblack .mini-popup .close {
+    background-image: url(img/wb-popup-close.png)!important
+}
+
+.whiteblack .mini-popup .dlink {
+    background-image: url(img/wb-doc-link.png)!important
+}
+
+.whiteblack .content-blind {
+    display: block!important
+}
+
+.whiteblack .content-std {
+    display: none!important
+}
+
+.whiteblack .map-descr {
+    min-width: 420px;
+    min-height: 50px
+}
+
+.whiteblack .news-block-wrap {
+    margin-bottom: 50px
+}
+
+.whiteblack .news-block-controls ul {
+    padding-top: 0
+}
+
+.blackwhite {
+    font-family: Arial;
+    background: #000!important;
+    color: #fff
+}
+
+.blackwhite * {
+    box-shadow: none!important;
+    border-color: #fff
+}
+
+.blackwhite ul li {
+    background-image: url(img/li-bw.png);
+    background-position: 0 .5em
+}
+
+.blackwhite div {
+    color: #fff
+}
+
+.blackwhite a {
+    color: #fff!important;
+    text-decoration: underline
+}
+
+.blackwhite a:hover {
+    color: #fff!important
+}
+
+.blackwhite h1,
+.blackwhite h2,
+.blackwhite h3,
+.blackwhite h4,
+.blackwhite h5,
+.blackwhite p,
+.blackwhite span,
+.blackwhite strong {
+    color: #fff!important
+}
+
+.blackwhite p {
+    font-size: 15px
+}
+
+.blackwhite blockquote,
+.blackwhite blockquote p {
+    color: #fff;
+    font-style: normal
+}
+
+.blackwhite blockquote {
+    border-left: 5px solid #fff;
+    background: 0 0;
+    padding: 0 0 0 20px
+}
+
+.blackwhite table {
+    border: 3px solid #fff;
+    color: #fff
+}
+
+.blackwhite td {
+    border: 1px solid #fff;
+    color: #fff
+}
+
+.blackwhite th {
+    background: #fff;
+    color: #000
+}
+
+.blackwhite hr {
+    border-top-color: #fff
+}
+
+.blackwhite .bx_catalog-compare-list {
+    background: 0 0;
+    border: 1px solid #fff
+}
+
+.blackwhite .news-block-controls {
+    border: 2px solid #fff;
+    background: #000
+}
+
+.blackwhite .news-block-controls li {
+    font-size: 12px;
+    border-color: #fff
+}
+
+.blackwhite .news-block-controls li.active {
+    background: #000;
+    border: 1px solid #fff;
+    border-left: none
+}
+
+.blackwhite .news-block-controls li.active .arrow {
+    background-image: url(img/bw-slider_nav_bg_arrow.png)
+}
+
+.blackwhite .news-block-controls li.active .holes {
+    display: none
+}
+
+.blackwhite .news-block-slider li {
+    background: #000
+}
+
+.blackwhite .slider-item .text {
+    border: 2px solid #fff
+}
+
+.blackwhite .read-more .button {
+    background: #fff;
+    color: #000!important
+}
+
+.blackwhite .read-more .button span {
+    display: none
+}
+
+.blackwhite .read-more a {
+    padding-top: 10px
+}
+
+.blackwhite .content-block .date {
+    background: #fff!important;
+    color: #000!important
+}
+
+.blackwhite .content-block .date a {
+    color: #fff
+}
+
+.blackwhite nav ul li {
+    padding: 5px 0!important;
+    margin: 0!important;
+    background: 0 0!important
+}
+
+.blackwhite nav ul li a {
+    color: #fff!important;
+    line-height: 18px
+}
+
+.blackwhite nav ul li div {
+    padding: 0!important;
+    margin: 0!important;
+    background: 0 0!important
+}
+
+.blackwhite nav ul li li {
+    padding-left: 0!important;
+    margin-left: 20px!important;
+    text-transform: none!important;
+    font-size: 12px;
+    list-style-type: circle
+}
+
+.blackwhite nav ul li li.active>a {
+    font-weight: 700
+}
+
+.blackwhite nav ul li li.active>div {
+    font-weight: 700
+}
+
+.blackwhite nav ul li.special {
+    background-color: #fff!important
+}
+
+.blackwhite nav ul li.special div a {
+    color: #000!important;
+    padding: 5px 10px!important
+}
+
+.blackwhite .service-block .top {
+    border-color: #fff
+}
+
+.blackwhite .service-block:hover {
+    background: #fff!important
+}
+
+.blackwhite .service-block:hover * {
+    color: #000!important
+}
+
+.blackwhite .service-block:hover .button {
+    background: #000!important
+}
+
+.blackwhite .service-block:hover .button span {
+    color: #fff!important
+}
+
+.blackwhite .service-block a:hover {
+    background: #fff
+}
+
+.blackwhite .button.small {
+    background: #fff;
+    border-top: none
+}
+
+.blackwhite .button.small span {
+    color: #000!important
+}
+
+.blackwhite .button.small .arrow {
+    display: none
+}
+
+.blackwhite .tabs-controls {
+    border-color: #fff
+}
+
+.blackwhite .tabs-controls .active {
+    background-color: #fff
+}
+
+.blackwhite .tabs-controls .active a {
+    color: #000!important
+}
+
+.blackwhite .tabs-controls .active a:hover {
+    color: #000!important
+}
+
+.blackwhite .service-block-2 {
+    border: 1px solid #fff
+}
+
+.blackwhite .logo-add a {
+    position: absolute;
+    left: 51px;
+    top: 9px;
+    background-image: url(img/bw-logotip_psk.png);
+    background-size: cover;
+    display: block;
+    width: 100px;
+    height: 25px
+}
+
+.blackwhite .logo-add a img {
+    display: none
+}
+
+.blackwhite .logo a {
+    width: 440px;
+    height: 55px;
+    background-image: url(img/bw-logo_big.png);
+    background-size: cover;
+    display: block
+}
+
+.blackwhite .logo a img {
+    display: none
+}
+
+.blackwhite .search-top input[type=submit] {
+    background-image: url(img/bw-search_top.png)
+}
+
+.blackwhite .search-top input[type=text] {
+    border-color: #fff!important;
+    background: 000!important;
+    color: #fff!important
+}
+
+.blackwhite footer {
+    background: 0 0!important;
+    box-shadow: none!important
+}
+
+.blackwhite footer a {
+    color: #fff!important
+}
+
+.blackwhite .footer-dark {
+    background: 0 0!important
+}
+
+.blackwhite .addresses-list li a {
+    background-image: url(img/bw-address_marker.png)!important
+}
+
+.blackwhite .addresses-list li a span {
+    border-color: #fff
+}
+
+.blackwhite .addresses-list li a.active {
+    background: 0 0!important
+}
+
+.blackwhite .inform_of_rez_table td {
+    border-color: #fff
+}
+
+.blackwhite .inform_of_rez_table .odd {
+    background: 0 0!important
+}
+
+.blackwhite .faq-box a {
+    border-color: #fff
+}
+
+.blackwhite footer .call-block {
+    background: 0 0!important;
+    border-top: none!important
+}
+
+.blackwhite .buy-link a {
+    background: #fff!important;
+    color: #000!important
+}
+
+.blackwhite .buy-link a:hover {
+    color: #000!important
+}
+
+.blackwhite .add-to-compare-list {
+    color: #fff!important;
+    background-image: url(img/bw-compare.png)!important
+}
+
+.blackwhite .add-to-compare-list:hover {
+    color: #fff!important
+}
+
+.blackwhite .catalog-items .item {
+    border: 1px solid #fff;
+    background: 0 0
+}
+
+.blackwhite .catalog-items .item .price {
+    background: #fff
+}
+
+.blackwhite .catalog-items .item .price span {
+    color: #000!important
+}
+
+.blackwhite .catalog-items .item .model a {
+    color: #fff
+}
+
+.blackwhite .catalog-items .item .model a:hover {
+    color: #fff
+}
+
+.blackwhite .catalog-items .item:hover {
+    box-shadow: none
+}
+
+.blackwhite .catalog-items .item .teh {
+    color: #fff
+}
+
+.blackwhite .bx_item_description,
+.blackwhite .item_info_section dl {
+    color: #fff
+}
+
+.blackwhite .bx_item_description dd,
+.blackwhite .item_info_section dl dd {
+    color: #fff
+}
+
+.blackwhite .btn-themes {
+    color: #fff;
+    background: #000
+}
+
+.blackwhite .btn-link {
+    color: #fff;
+    background: 0 0
+}
+
+.blackwhite .bx-filter-select-popup label {
+    color: #000
+}
+
+.blackwhite .bx-filter-select-popup label:hover {
+    color: #fff;
+    background: #000
+}
+
+.blackwhite .bx-filter-select-arrow {
+    background-image: url(img/bw-select.png)
+}
+
+.blackwhite .gl_switch.asgrid {
+    background-image: url(img/bw-plit.png)
+}
+
+.blackwhite .gl_switch.aslist {
+    background-image: url(img/bw-list.png)
+}
+
+.blackwhite .gl_switch.asgrid.currentview {
+    background-image: url(img/wb-plit.png);
+    background-color: #fff
+}
+
+.blackwhite .gl_switch.aslist.currentview {
+    background-image: url(img/wb-list.png);
+    background-color: #fff
+}
+
+.blackwhite .bx-filter-select-text {
+    color: #000
+}
+
+.blackwhite .bx_item_container .bx_lt_rt {
+    background-color: #000
+}
+
+.blackwhite .item_info_section table tr td {
+    color: #fff
+}
+
+.blackwhite .prop-title {
+    color: #fff
+}
+
+.blackwhite .table_compare table tr td {
+    background: #000;
+    color: #fff!important;
+    border: 1px solid #fff!important
+}
+
+.blackwhite .table-procurement .progress .p-bg {
+    border: 1px solid #fff;
+    background: 0 0
+}
+
+.blackwhite .table-procurement .progress .p-line {
+    background: #fff
+}
+
+.blackwhite .table-procurement .p-value {
+    color: #fff
+}
+
+.blackwhite .table-procurement .doc-link,
+.blackwhite .table-procurement .prot-link {
+    background-image: url(img/bw-doc-link.png)
+}
+
+.blackwhite .icon-status-1 {
+    color: #fff;
+    background-image: url(img/bw-status-1.png)
+}
+
+.blackwhite .icon-status-0,
+.blackwhite .icon-status-2 {
+    color: #fff;
+    background-image: url(img/bw-status-2.png)
+}
+
+.blackwhite .icon-status-3 {
+    color: #fff;
+    background-image: url(img/bw-status-3.png)
+}
+
+.blackwhite .errortext,
+.blackwhite .notetext {
+    color: #fff
+}
+
+.blackwhite .service-block img {
+    display: none
+}
+
+.blackwhite #map * {
+    color: #000!important
+}
+
+.blackwhite .ymaps-outer-pane {
+    font-size: 14px
+}
+
+.blackwhite .ymaps-outer-pane * {
+    color: #000!important
+}
+
+.blackwhite .ymaps-outer-pane h1 {
+    font-size: 20
+}
+
+.blackwhite .mini-popup {
+    background: #000!important;
+    color: #fff!important;
+    border-color: #fff!important
+}
+
+.blackwhite .mini-popup .close {
+    background-image: url(img/bw-popup-close.png)!important
+}
+
+.blackwhite .mini-popup .dlink {
+    background-image: url(img/bw-doc-link.png)!important
+}
+
+.blackwhite .pay-point--pes {
+    display: block;
+    width: 163px;
+    height: 21px;
+    background-image: url(img/bw-logo_sm.png);
+    background-repeat: no-repeat
+}
+
+.blackwhite .pay-point--pes img {
+    display: none!important
+}
+
+.blackwhite .pay-point--psk {
+    display: block;
+    width: 165px;
+    height: 40px;
+    background-image: url(img/bw-logotip_psk-sm.png)
+}
+
+.blackwhite .pay-point--psk img {
+    display: none!important
+}
+
+.blackwhite .content-blind {
+    display: block!important
+}
+
+.blackwhite .content-std {
+    display: none!important
+}
+
+.blackwhite .map-descr {
+    min-width: 420px;
+    min-height: 50px
+}
+
+.blackwhite .news-block-wrap {
+    margin-bottom: 50px
+}
+
+.blackwhite .news-block-controls ul {
+    padding-top: 0
+}
+
+.blue {
+    background: #9dd1ff;
+    color: #063462
+}
+
+.blue * {
+    border-color: #063462
+}
+
+.blue .container * {
+    box-shadow: none!important;
+    text-shadow: none!important
+}
+
+.blue ul li {
+    background-image: url(../img/blind/li-blue.png);
+    background-position: 0 .5em
+}
+
+.blue a {
+    color: #063462!important;
+    text-decoration: underline
+}
+
+.blue a:hover {
+    color: #063462!important
+}
+
+.blue h1,
+.blue h2,
+.blue h3,
+.blue h4,
+.blue h5,
+.blue p,
+.blue span {
+    color: #063462!important
+}
+
+.blue p {
+    font-size: 15px
+}
+
+.blue hr {
+    border-top-color: #063462
+}
+
+.blue blockquote,
+.blue blockquote p {
+    color: #063462;
+    font-style: normal;
+    background: 0 0
+}
+
+.blue blockquote {
+    border-left: 5px solid #063462;
+    padding: 0 0 0 20px
+}
+
+.blue table {
+    border: 3px solid #063462;
+    color: #063462
+}
+
+.blue td {
+    border: 1px solid #063462!important;
+    color: #063462
+}
+
+.blue th {
+    background: #063462;
+    color: #9dd1ff
+}
+
+.blue strong {
+    color: #063462!important
+}
+
+.blue .bx_catalog-compare-list {
+    background: 0 0;
+    border: 1px solid #063462
+}
+
+.blue .call-block {
+    background: 0 0;
+    border-top: none
+}
+
+.blue .table_compare table tr td {
+    background: #9dd1ff;
+    color: #063462!important;
+    border: 1px solid #063462!important
+}
+
+.blue .news-block-controls {
+    border: 2px solid #063462;
+    background: #9dd1ff
+}
+
+.blue .news-block-controls li {
+    font-size: 12px;
+    border-color: #063462
+}
+
+.blue .news-block-controls li.active {
+    background: #9dd1ff;
+    border: 1px solid #063462;
+    border-left: none
+}
+
+.blue .news-block-controls li.active .arrow {
+    background-image: url(img/b-slider_nav_bg_arrow.png)
+}
+
+.blue .news-block-controls li.active .holes {
+    display: none
+}
+
+.blue .news-block-slider li {
+    background: #9dd1ff
+}
+
+.blue .slider-item .text {
+    border: 2px solid #063462
+}
+
+.blue .read-more .button {
+    background: #063462;
+    color: #9dd1ff
+}
+
+.blue .read-more .button span {
+    display: none
+}
+
+.blue .read-more a {
+    color: #9dd1ff!important;
+    padding-top: 10px
+}
+
+.blue .content-block .date {
+    background: #063462!important;
+    color: #9dd1ff!important
+}
+
+.blue .content-block .date a {
+    color: #063462
+}
+
+.blue nav ul li {
+    padding: 5px 0!important;
+    margin: 0!important;
+    background: 0 0!important
+}
+
+.blue nav ul li a {
+    color: #063462!important;
+    line-height: 18px
+}
+
+.blue nav ul li div {
+    padding: 0!important;
+    margin: 0!important;
+    background: 0 0!important
+}
+
+.blue nav ul li li {
+    padding-left: 0!important;
+    margin-left: 20px!important;
+    text-transform: none!important;
+    font-size: 12px;
+    list-style-type: circle
+}
+
+.blue nav ul li li.active>a {
+    font-weight: 700
+}
+
+.blue nav ul li li.active>div {
+    font-weight: 700
+}
+
+.blue nav ul li.special {
+    background-color: #063462!important
+}
+
+.blue nav ul li.special div a {
+    color: #9dd1ff!important;
+    padding: 5px 10px!important
+}
+
+.blue .service-block .top {
+    border-color: #063462
+}
+
+.blue .service-block:hover {
+    background: #063462
+}
+
+.blue .service-block:hover * {
+    color: #9dd1ff!important
+}
+
+.blue .service-block:hover .button {
+    background: #9dd1ff!important
+}
+
+.blue .service-block:hover .button span {
+    color: #063462!important
+}
+
+.blue .service-block a:hover {
+    background: 0 0
+}
+
+.blue .button.small {
+    background: #063462;
+    border-top: none
+}
+
+.blue .button.small span {
+    color: #9dd1ff!important
+}
+
+.blue .button.small .arrow {
+    display: none
+}
+
+.blue .tabs-controls {
+    border-color: #9dd1ff
+}
+
+.blue .tabs-controls .active {
+    background-color: #063462
+}
+
+.blue .tabs-controls .active a {
+    color: #9dd1ff!important
+}
+
+.blue .tabs-controls .active a:hover {
+    color: #9dd1ff!important
+}
+
+.blue .service-block-2 {
+    border: 1px solid #063462
+}
+
+.blue .logo-add a {
+    position: absolute;
+    left: 51px;
+    top: 9px;
+    background-image: url(img/b-logotip_psk.png);
+    background-size: cover;
+    display: block;
+    width: 100px;
+    height: 25px
+}
+
+.blue .logo-add a img {
+    display: none
+}
+
+.blue .logo a {
+    width: 440px;
+    height: 55px;
+    background-image: url(img/b-logo_big.png);
+    background-size: cover;
+    display: block
+}
+
+.blue .logo a img {
+    display: none
+}
+
+.blue .search-top input[type=submit] {
+    background-image: url(img/b-search_top.png)
+}
+
+.blue .search-top input[type=text] {
+    border-color: #063462;
+    background: #9dd1ff
+}
+
+.blue footer {
+    background: 0 0!important;
+    box-shadow: none!important
+}
+
+.blue footer a {
+    color: #063462!important
+}
+
+.blue .footer-dark {
+    background: 0 0!important
+}
+
+.blue .addresses-list li a {
+    background-image: url(img/b-address_marker.png)!important
+}
+
+.blue .addresses-list li a span {
+    border-color: #063462
+}
+
+.blue .addresses-list li a.active {
+    background: 0 0!important
+}
+
+.blue .inform_of_rez_table td {
+    border-color: #063462
+}
+
+.blue .inform_of_rez_table .odd {
+    background: 0 0!important
+}
+
+.blue .faq-box a {
+    border-color: #063462
+}
+
+.blue .buy-link a {
+    background: #063462!important;
+    color: #9dd1ff!important
+}
+
+.blue .buy-link a:hover {
+    color: #9dd1ff!important
+}
+
+.blue .add-to-compare-list {
+    color: #063462!important;
+    background-image: url(img/wb-compare.png)!important
+}
+
+.blue .add-to-compare-list:hover {
+    color: #063462!important
+}
+
+.blue .bx_lt_rt,
+.blue .catalog-items .item {
+    border: 1px solid #063462!important;
+    background: 0 0!important
+}
+
+.blue .bx_lt_rt .price,
+.blue .catalog-items .item .price {
+    background: 0 0
+}
+
+.blue .bx_lt_rt .model a,
+.blue .catalog-items .item .model a {
+    color: #063462
+}
+
+.blue .bx_lt_rt .model a span,
+.blue .catalog-items .item .model a span {
+    color: #063462!important
+}
+
+.blue .bx_lt_rt .model a:hover,
+.blue .catalog-items .item .model a:hover {
+    color: #063462
+}
+
+.blue .bx_lt_rt:hover,
+.blue .catalog-items .item:hover {
+    box-shadow: none
+}
+
+.blue .bx_lt_rt .model,
+.blue .bx_lt_rt .par,
+.blue .bx_lt_rt .teh,
+.blue .bx_lt_rt .title,
+.blue .catalog-items .item .model,
+.blue .catalog-items .item .par,
+.blue .catalog-items .item .teh,
+.blue .catalog-items .item .title {
+    color: #063462!important
+}
+
+.blue .bx_lt_rt .model span,
+.blue .bx_lt_rt .par span,
+.blue .bx_lt_rt .teh span,
+.blue .bx_lt_rt .title span,
+.blue .catalog-items .item .model span,
+.blue .catalog-items .item .par span,
+.blue .catalog-items .item .teh span,
+.blue .catalog-items .item .title span {
+    color: #063462!important
+}
+
+.blue .bx_item_description,
+.blue .item_info_section dl {
+    color: #063462
+}
+
+.blue .btn-themes {
+    color: #063462;
+    background: #9dd1ff
+}
+
+.blue .btn-link {
+    color: #063462;
+    background: 0 0
+}
+
+.blue .bx-filter-select-popup label {
+    color: #063462
+}
+
+.blue .bx-filter-select-popup label:hover {
+    color: #9dd1ff;
+    background: #063462
+}
+
+.blue .bx-filter-select-arrow {
+    background-image: url(img/wb-select.png)
+}
+
+.blue .gl_switch.asgrid {
+    background-image: url(img/wb-plit.png);
+    border-color: #063462
+}
+
+.blue .gl_switch.aslist {
+    background-image: url(img/wb-list.png);
+    border-color: #063462
+}
+
+.blue .gl_switch.asgrid.currentview {
+    background-image: url(img/bw-plit.png);
+    background-color: #063462
+}
+
+.blue .gl_switch.aslist.currentview {
+    background-image: url(img/bw-list.png);
+    background-color: #063462
+}
+
+.blue .bx-breadcrumb-item span,
+.blue .bx-filter-parameters-box-hint {
+    color: #063462!important
+}
+
+.blue .table-procurement .progress .p-bg {
+    border: 1px solid #063462;
+    background: 0 0
+}
+
+.blue .table-procurement .progress .p-line {
+    background: #063462
+}
+
+.blue .table-procurement .p-value {
+    color: #063462
+}
+
+.blue .table-procurement .doc-link,
+.blue .table-procurement .prot-link {
+    background-image: url(img/bl-doc-link.png)
+}
+
+.blue .icon-status-1 {
+    color: #063462;
+    background-image: url(img/bl-status-1.png)
+}
+
+.blue .icon-status-0,
+.blue .icon-status-2 {
+    color: #063462;
+    background-image: url(img/bl-status-2.png)
+}
+
+.blue .icon-status-3 {
+    color: #063462;
+    background-image: url(img/bl-status-3.png)
+}
+
+.blue .errortext,
+.blue .notetext {
+    color: #063462
+}
+
+.blue .dev {
+    color: #063462;
+    position: relative
+}
+
+.blue .dev img {
+    display: none!important
+}
+
+.blue .dev:after {
+    content: "";
+    background: url(img/bl-logo_2_white.png) no-repeat 0 0;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 147px;
+    height: 28px
+}
+
+.blue .service-block img {
+    display: none
+}
+
+.blue .mini-popup {
+    background: #9dd1ff!important;
+    color: #063462!important;
+    border-color: #063462!important
+}
+
+.blue .mini-popup .close {
+    background-image: url(img/bl-popup-close.png)!important
+}
+
+.blue .mini-popup .dlink {
+    background-image: url(img/bl-doc-link.png)!important
+}
+
+.blue .content-blind {
+    display: block!important
+}
+
+.blue .content-std {
+    display: none!important
+}
+
+.blue .map-descr {
+    min-width: 420px;
+    min-height: 50px
+}
+
+.blue .news-block-wrap {
+    margin-bottom: 50px
+}
+
+.blue .news-block-controls ul {
+    padding-top: 0
+}
+
+.s14 {
+    font-size: 14px
+}
+
+.s14 a,
+.s14 blockquote,
+.s14 div,
+.s14 h1,
+.s14 h2,
+.s14 h3,
+.s14 h4,
+.s14 h5,
+.s14 li,
+.s14 p,
+.s14 span,
+.s14 td {
+    font-size: 14px;
+    line-height: normal
+}
+
+.s14 p,
+.s14 span,
+.s14 strong {
+    font-size: 14px!important
+}
+
+.s14 h1 {
+    font-size: 30px
+}
+
+.s14 h2 {
+    font-size: 24px
+}
+
+.s14 h3 {
+    font-size: 18px
+}
+
+.s14 .button.small,
+.s14 .news-block-controls li,
+.s14 .read-more .button,
+.s14 .service-block h2,
+.s14 .service-block span,
+.s14 .table_compare td,
+.s14 span.line {
+    font-size: 14px!important
+}
+
+.s14 .news-block-controls a,
+.s14 .service-block-2 {
+    font-size: 12px!important
+}
+
+.s14 .news-block-controls a h2,
+.s14 .news-block-controls a p,
+.s14 .service-block-2 h2,
+.s14 .service-block-2 p {
+    font-size: 12px!important
+}
+
+.s14 .ymaps-outer-pane {
+    font-size: 12px!important
+}
+
+.s14 .ymaps-outer-pane h3 {
+    font-size: 18px!important
+}
+
+.s16 {
+    font-size: 16px
+}
+
+.s16 a,
+.s16 blockquote,
+.s16 div,
+.s16 h1,
+.s16 h2,
+.s16 h3,
+.s16 h4,
+.s16 h5,
+.s16 li,
+.s16 p,
+.s16 span,
+.s16 td {
+    font-size: 16px;
+    line-height: normal
+}
+
+.s16 p,
+.s16 span,
+.s16 strong {
+    font-size: 16px!important
+}
+
+.s16 h1 {
+    font-size: 32px
+}
+
+.s16 h2 {
+    font-size: 26px
+}
+
+.s16 h3 {
+    font-size: 20px
+}
+
+.s16 .button.small,
+.s16 .news-block-controls li,
+.s16 .read-more .button,
+.s16 .service-block h2,
+.s16 .service-block span,
+.s16 .service-block-2 h2,
+.s16 span.line {
+    font-size: 14px!important
+}
+
+.s16 .news-block-controls a,
+.s16 .service-block-2 {
+    font-size: 12px!important
+}
+
+.s16 .news-block-controls a h2,
+.s16 .news-block-controls a p,
+.s16 .service-block-2 h2,
+.s16 .service-block-2 p {
+    font-size: 12px!important
+}
+
+.s16 .slider-item h1 {
+    font-size: 30px!important
+}
+
+.s16 footer ul a {
+    font-size: 16px!important;
+    margin-bottom: 5px
+}
+
+.s16 footer .call-block h3 {
+    font-size: 14px;
+    font-weight: 700
+}
+
+.s16 .catalog-items .item {
+    width: 48%
+}
+
+.s16 .table_compare td {
+    font-size: 16px!important
+}
+
+.s16 .ymaps-outer-pane {
+    font-size: 14px!important
+}
+
+.s16 .ymaps-outer-pane h3 {
+    font-size: 18px!important
+}
+
+.s18 {
+    font-size: 18px
+}
+
+.s18 a,
+.s18 blockquote,
+.s18 div,
+.s18 h1,
+.s18 h2,
+.s18 h3,
+.s18 h4,
+.s18 h5,
+.s18 li,
+.s18 p,
+.s18 span,
+.s18 td {
+    font-size: 18px;
+    line-height: normal
+}
+
+.s18 p,
+.s18 span,
+.s18 strong {
+    font-size: 18px!important
+}
+
+.s18 h1 {
+    font-size: 36px
+}
+
+.s18 h2 {
+    font-size: 32px
+}
+
+.s18 h3 {
+    font-size: 22px
+}
+
+.s18 .button.small,
+.s18 .news-block-controls li,
+.s18 .read-more .button,
+.s18 .service-block h2,
+.s18 .service-block span,
+.s18 .service-block-2 h2,
+.s18 span.line {
+    font-size: 14px!important
+}
+
+.s18 .news-block-controls a,
+.s18 .service-block-2 {
+    font-size: 12px!important
+}
+
+.s18 .news-block-controls a h2,
+.s18 .news-block-controls a p,
+.s18 .service-block-2 h2,
+.s18 .service-block-2 p {
+    font-size: 12px!important
+}
+
+.s18 footer ul a {
+    font-size: 18px!important;
+    margin-bottom: 10px
+}
+
+.s18 footer .call-block h3 {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.s18 .slider-item h1 {
+    font-size: 30px!important
+}
+
+.s18 .catalog-items .item {
+    width: 48%;
+    padding-bottom: 80px
+}
+
+.s18 .table_compare td {
+    font-size: 18px!important
+}
+
+.s18 .ymaps-outer-pane {
+    font-size: 16px!important
+}
+
+.s18 .ymaps-outer-pane h3 {
+    font-size: 20px!important
+}
+
+.w2 .container {
+    letter-spacing: 1px
+}
+
+.w2 .addresses-list li a span,
+.w2 .button span,
+.w2 .service-block h2,
+.w2 .service-block-2 * {
+    letter-spacing: 0!important
+}
+
+.w2 .catalog-items .item {
+    width: 48%
+}
+
+.w3 .container {
+    letter-spacing: 2px
+}
+
+.w3 .addresses-list li a span,
+.w3 .button span,
+.w3 .icon-status-0,
+.w3 .icon-status-1,
+.w3 .icon-status-2,
+.w3 .icon-status-3,
+.w3 .news-block-controls a,
+.w3 .service-block h2,
+.w3 .service-block-2 * {
+    letter-spacing: 0!important
+}
+
+.w3 .catalog-items .item {
+    width: 48%
+}
+
+.arial {
+    font-family: Arial!important
+}
+
+.arial * {
+    font-family: Arial!important
+}
+
+.times {
+    font-family: 'Times New Roman'!important
+}
+
+.times * {
+    font-family: 'Times New Roman'!important
+}
+
+.times .opened div,
+.times p {
+    font-family: 'Times New Roman'!important
+}
+
+.noshow img {
+    display: none!important
+}
+
+.noshow .catalog-items .img {
+    background: 0 0!important;
+    height: 0;
+    display: none
+}
+
+.noshow .bx_bigimages_aligner {
+    display: none!important
+}
+
+.noshow .service-block-2 {
+    background: 0 0!important
+}
+
+.noshow .service-block-2 img {
+    display: none
+}
+
+.noshow .slider-item {
+    background: 0 0
+}
+
+.noshow .slider-item .image img {
+    display: none
+}
+
+.noshow .itemList .item {
+    min-height: 200px
+}
+
+.noshow .itemList .chars {
+    margin-left: 0!important
+}
+
+.noshow .bx_bigimages {
+    display: none
+}
+
+.noshow .bx_rt {
+    float: none!important;
+    width: 100%!important
+}
+
+.noshow .secondary-slider-wrap {
+    display: none
+}
+
+.noshow .map-wrap .inform_of_rez_table,
+.noshow .map-wrap .map,
+.noshow .map-wrap .tabs {
+    display: none
+}
+
+.noshow .map-holder .map,
+.noshow .map-holder .tabs {
+    display: none
+}
+
+.noshow .hidden_map_items_for_blind_version {
+    display: block!important
+}
+
+.noshow .pay-point span {
+    display: block
+}
+
+.noshow .pay-point--pes,
+.noshow .pay-point--psk {
+    width: auto;
+    height: auto;
+    background: 0 0
+}
+
+.noshow .service-block {
+    position: relative
+}
+
+.noshow .service-block-2__hide {
+    display: block!important;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%
+}
