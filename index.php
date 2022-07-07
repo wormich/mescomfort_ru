@@ -199,7 +199,7 @@ $APPLICATION->SetTitle("");
                         "EDIT_TEMPLATE" => "",
                         "PATH" => "/local/includes/section/block2/title1.php"
                     )
-                );?><img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt=""></h2>
+                );?><!--<img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">--></h2>
             <h3 class="_blue"><?$APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "",
@@ -373,7 +373,7 @@ $APPLICATION->SetTitle("");
                             "PATH" => "/local/includes/section/block3/title1.php"
                         )
                     );?>
-                    <img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt=""></h2>
+                    <!--<img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">--></h2>
                 <h3 class="_blue">
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:main.include",
@@ -572,7 +572,7 @@ $APPLICATION->SetTitle("");
                         "EDIT_TEMPLATE" => "",
                         "PATH" => "/local/includes/section/block4/title2.php"
                     )
-                );?><img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt=""></h3>
+                );?><!--<img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">--></h3>
         </div>
         <div class="section__right">
             <?$APPLICATION->IncludeComponent(
@@ -734,7 +734,7 @@ $APPLICATION->SetTitle("");
                         "PATH" => "/local/includes/section/block5/title1.php"
                     )
                 );?>
-                <img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">
+                <!--<img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">-->
             </h2>
 
         <div class="section__text">
@@ -867,7 +867,7 @@ $APPLICATION->SetTitle("");
                     "PATH" => "/local/includes/section/block6/title1.php"
                 )
             );?>
-            <img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">
+            <!--<img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">-->
         </h2>
  <br>
  <br>
@@ -998,7 +998,7 @@ $APPLICATION->SetTitle("");
                     "PATH" => "/local/includes/section/block7/title1.php"
                 )
             );?>
-            <img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">
+            <!--<img src="/local/templates/landingMesComfort/img/free-master2.png" class="section__pin" alt="">-->
         </h2>
  <br>
 		<div class="section__text" style="max-width:640px;">
@@ -1463,9 +1463,11 @@ $APPLICATION->SetTitle("");
  <br>
  <br>
  <br>
+    <!--
 <p style="margin-left:100px; text-align: left; margin-right:100px;">
 	 Выезд мастера бесплатный на территории Москвы и Московской области (только по населенным пунктам МО, указанным в прайс-листе). Стоимость выезда по другим населенным пунктам, а также выезд свыше 10 км от МКАД доплачивается из расчета 30 рублей за 1 км.
 </p>
+-->
  </section>
 
     <!---блок 11-->
