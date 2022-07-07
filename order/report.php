@@ -24,16 +24,27 @@ require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_bef
 //print_r($_REQUEST);
 
 $FORM_ID=3;
+$arHashRND = [];
 CModule::IncludeModule("form");
-
+CModule::IncludeModule("iblock");
+if (!$_REQUEST['hash']) {
+    echo json_encode(['type'=>'error', 'data'=>'Ошибка отправки, возможно установлен бот рассылки!'], JSON_UNESCAPED_UNICODE);
+exit;
+}
+$returnFromCI = CIBlockElement::GetList([],['IBLOCK_ID' => 29,'NAME' => trim($_REQUEST['hash']), 'ACTIVE' => 'Y',  'PERMISSIONS_BY'=>1, 'ACTIVE_DATE' => 'Y']);
+while ($arControlHashRND = $returnFromCI->Fetch())
+{
+    $arHashRND[]=$arControlHashRND;
+}
 $arValues = array (
     "form_text_29"                 => $_REQUEST['name'],
     "form_text_30"                 => $_REQUEST['phone'],
     "form_textarea_43"             => $_REQUEST['msg']
 );
-if ($RESULT_ID = CFormResult::Add($FORM_ID, $arValues))
-{
+
+if (!count($arHashRND)>0){
+    echo json_encode(['type'=>'error', 'data'=>'Ошибка отправки, возможно установлен бот рассылки!'], JSON_UNESCAPED_UNICODE);
+}
+elseif ($RESULT_ID = CFormResult::Add($FORM_ID, $arValues)) {
     echo json_encode(['type'=>'ok'], JSON_UNESCAPED_UNICODE);
-}else{
-    echo json_encode(['type'=>'Error', 'data'=>'Ошибка обработки данных'], JSON_UNESCAPED_UNICODE);
 }

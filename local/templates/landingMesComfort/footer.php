@@ -16,7 +16,7 @@ $APPLICATION->IncludeComponent(
         "AREA_FILE_SHOW" => "file",
         "AREA_FILE_SUFFIX" => "inc",
         "EDIT_TEMPLATE" => "",
-        "PATH" => "/local/includes/popupWindows/oreder-popup.html"
+        "PATH" => "/local/includes/popupWindows/oreder-popup.php"
     )
 );
 
@@ -27,7 +27,7 @@ $APPLICATION->IncludeComponent(
         "AREA_FILE_SHOW" => "file",
         "AREA_FILE_SUFFIX" => "inc",
         "EDIT_TEMPLATE" => "",
-        "PATH" => "/local/includes/popupWindows/send-review-popup.html"
+        "PATH" => "/local/includes/popupWindows/send-review-popup.php"
     )
 );
 
