@@ -27,9 +27,9 @@ $FORM_ID=3;
 CModule::IncludeModule("form");
 
 $arValues = array (
-    "form_text_16"                 => $_REQUEST['name'],
-    "form_text_17"                 => $_REQUEST['phone'],
-    "form_textarea_30"             => $_REQUEST['msg']
+    "form_text_29"                 => $_REQUEST['name'],
+    "form_text_30"                 => $_REQUEST['phone'],
+    "form_textarea_43"             => $_REQUEST['msg']
 );
 if ($RESULT_ID = CFormResult::Add($FORM_ID, $arValues))
 {
