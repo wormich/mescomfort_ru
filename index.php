@@ -1452,7 +1452,7 @@ $APPLICATION->SetTitle("");
 			<div class="captcha-error captcha-error--js">
 				 Необходимо правильно заполнить капчу!
 			</div>
-			<div class="g-recaptcha" id="g-recaptcha-order_page">
+<!--			<div class="g-recaptcha" id="g-recaptcha-order_page">-->
 			</div>
 		</div>
 		<div class="submit">

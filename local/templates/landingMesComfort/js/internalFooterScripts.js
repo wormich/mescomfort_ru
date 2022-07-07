@@ -1,20 +1,20 @@
-var onloadCaptchas = function() {
-    if (document.getElementById('g-recaptcha-review') != null){
-        grecaptcha.render("g-recaptcha-review", {
-            'sitekey' : '6LfyviEUAAAAANc_dH8Si69b9jXdUF5MQekxZ2NI',
-        });
-    }
-    if (document.getElementById('g-recaptcha-order') != null){
-        grecaptcha.render("g-recaptcha-order", {
-            'sitekey' : '6LfyviEUAAAAANc_dH8Si69b9jXdUF5MQekxZ2NI',
-        });
-    }
-    if (document.getElementById('g-recaptcha-order_page') != null){
-        grecaptcha.render("g-recaptcha-order_page", {
-            'sitekey' : '6LfyviEUAAAAANc_dH8Si69b9jXdUF5MQekxZ2NI',
-        });
-    }
-};
+// var onloadCaptchas = function() {
+//     if (document.getElementById('g-recaptcha-review') != null){
+//         grecaptcha.render("g-recaptcha-review", {
+//             'sitekey' : '6LfyviEUAAAAANc_dH8Si69b9jXdUF5MQekxZ2NI',
+//         });
+//     }
+//     if (document.getElementById('g-recaptcha-order') != null){
+//         grecaptcha.render("g-recaptcha-order", {
+//             'sitekey' : '6LfyviEUAAAAANc_dH8Si69b9jXdUF5MQekxZ2NI',
+//         });
+//     }
+//     if (document.getElementById('g-recaptcha-order_page') != null){
+//         grecaptcha.render("g-recaptcha-order_page", {
+//             'sitekey' : '6LfyviEUAAAAANc_dH8Si69b9jXdUF5MQekxZ2NI',
+//         });
+//     }
+// };
 
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
