@@ -41,3 +41,4 @@ iblock
 /iblock/*
 /promo/*
 /promo-2/*
+!/local/php_interface/classes/iblock/
