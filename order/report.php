@@ -23,7 +23,7 @@ require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_bef
 //    echo json_encode(['type'=>'Error', 'data'=>'Ошибка обработки данных'], JSON_UNESCAPED_UNICODE);
 //print_r($_REQUEST);
 
-$FORM_ID=3;
+$FORM_ID=4;
 $arHashRND = [];
 CModule::IncludeModule("form");
 CModule::IncludeModule("iblock");
@@ -37,9 +37,9 @@ while ($arControlHashRND = $returnFromCI->Fetch())
     $arHashRND[]=$arControlHashRND;
 }
 $arValues = array (
-    "form_text_29"                 => $_REQUEST['name'],
-    "form_text_30"                 => $_REQUEST['phone'],
-    "form_textarea_43"             => $_REQUEST['msg']
+    "form_text_34"                 => $_REQUEST['name'],
+    "form_text_35"                 => $_REQUEST['phone'],
+    "form_textarea_36"             => $_REQUEST['msg']
 );
 
 if (!count($arHashRND)>0){
