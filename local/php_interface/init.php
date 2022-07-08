@@ -4,7 +4,23 @@ use \Bitrix\Main\Mail\Event;
 define("LOG_FILENAME", $_SERVER["DOCUMENT_ROOT"]."/log.txt");
 
 AddEventHandler("iblock", "OnAfterIBlockElementAdd", Array("MyClass", "OnAfterIBlockElementAddHandler"));
+$classPath = '/local/php_interface/classes/';
+CModule::AddAutoloadClasses(
+  '', array(
+    '\Local\Helpers\Constants' => $classPath . "helpers/Constants.php",
+    '\Local\Entities\InterraoWebformQuizTable' => $classPath . "Entities/InterraoWebformQuizTable.php",
+    '\Local\Entities\FormAnswerTable' => $classPath . "Entities/FormAnswerTable.php",
+    '\Local\Entities\FormFieldTable' => $classPath . "Entities/FormFieldTable.php",
+    '\Local\Entities\FormResultAnswerTable' => $classPath . "Entities/FormResultAnswerTable.php",
+    '\Local\Form\FormQuestionsList' => $classPath . "form/FormQuestionsList.php",
+    '\Local\Iblock\IblockServicesList' => $classPath . "iblock/IblockServicesList.php",
+    '\Local\Form\QrGenerate' => $classPath . "form/QrGenerate.php",
+  )
+);
 
+include_once 'handlers.php';
+include_once 'helpers.php';
+include_once 'functions.php';
 class MyClass
 {
     // создаем обработчик события "OnAfterIBlockElementAdd"
