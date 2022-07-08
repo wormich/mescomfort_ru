@@ -39,7 +39,8 @@ while ($arControlHashRND = $returnFromCI->Fetch())
 $arValues = array (
     "form_text_34"                 => $_REQUEST['name'],
     "form_text_35"                 => $_REQUEST['phone'],
-    "form_textarea_36"             => $_REQUEST['msg']
+    "form_textarea_36"             => $_REQUEST['msg'],
+  "form_text_44"             => $_REQUEST['form_text_user_ip']
 );
 
 if (!count($arHashRND)>0){
