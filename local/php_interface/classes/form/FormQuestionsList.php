@@ -1537,6 +1537,7 @@ class FormQuestionsList
                     $arAnswer2
                 );
 
+
                 if (!empty($arAnswer2)) {
                     foreach ($arAnswer2 as $key=>$value) {
                         if ($key == 'comment_status') {
@@ -1545,6 +1546,11 @@ class FormQuestionsList
                         $content = str_replace(
                           'name="form_text_' . key($value) . '"',
                           'name="form_text_' . key($value) . '" disabled',
+                          $content
+                        );
+                        $content = str_replace(
+                          'name="form_textarea_' . key($value) . '"',
+                          'name="form_textarea_' . key($value) . '" disabled',
                           $content
                         );
                     }
