@@ -222,12 +222,11 @@ AddEventHandler("main", "OnAdminTabControlBegin", "\Local\Form\FormQuestionsList
 AddEventHandler('form', 'onAfterResultAdd', '\Local\Form\FormQuestionsList::WebFormAdminResult');
 AddEventHandler('form', 'onAfterResultUpdate', '\Local\Form\FormQuestionsList::WebFormAdminResult');
 AddEventHandler("main", "OnAdminContextMenuShow", "\Local\Form\FormQuestionsList::FormQuestionListCSVMenu");
+AddEventHandler("main", "OnEpilog", "\Local\Form\FormQuestionsList::EndBuffer");
 
 
 AddEventHandler("iblock", "OnAfterIBlockElementAdd", "\Local\Iblock\IblockServicesList::saveItemsToFormAfterUpdate");
 AddEventHandler("iblock", "OnAfterIBlockElementUpdate", "\Local\Iblock\IblockServicesList::saveItemsToFormAfterUpdate");
-
-RegisterModuleDependences("main", "OnAfterEpilog", "main", "\Local\Form\FormQuestionsList", "EndBuffer", "100");
 
 /**
  * Событие добавления кнопки сохранения Excel файла

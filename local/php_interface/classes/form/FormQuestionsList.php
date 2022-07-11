@@ -1524,7 +1524,10 @@ class FormQuestionsList
             && $_GET['WEB_FORM_ID'] == self::WEB_FORM_ID
         ) {
             global $USER;
-            echo '123';
+            $content = ob_get_contents();
+            ob_end_clean();
+            $content = str_replace('Поля результата', 'Данные от клиента', $content);
+
             if (!$USER->isAdmin()) {
                 Loader::includeModule('form');
                 $answer = \CFormResult::GetDataByID(
@@ -1534,22 +1537,18 @@ class FormQuestionsList
                     $arAnswer2
                 );
 
-                $content = ob_get_contents();
-                ob_end_clean();
-
-
                 if (!empty($arAnswer2)) {
-                    $content = str_replace(
-                      '<tr>
-		<td valign="top">
-ФИО оператора		</td><td>
-<input type="text"  class="inputtext"  name="form_text_' . key($arAnswer2['operator_name']) . '" value="' . current(
-                        $arAnswer2['operator_name']
-                      )['USER_TEXT'] . '" size="0" /><br />		</td>
-	</tr>',
-                      '',
-                      $content
-                    );
+                    foreach ($arAnswer2 as $key=>$value) {
+                        if ($key == 'comment_status') {
+                            continue;
+                        }
+                        $content = str_replace(
+                          'name="form_text_' . key($value) . '"',
+                          'name="form_text_' . key($value) . '" disabled',
+                          $content
+                        );
+                    }
+
 
                 } else {
                     $content = str_replace('<tr>
@@ -1558,8 +1557,9 @@ class FormQuestionsList
 <input type="text"  class="inputtext"  name="form_text_85" value="" size="0" /><br />		</td>
 	</tr>', '', $content);
                 }
-                echo $content;
             }
+            echo $content;
+
         }
     }
 }
