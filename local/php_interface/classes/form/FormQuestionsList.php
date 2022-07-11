@@ -1615,6 +1615,21 @@ class FormQuestionsList
 </tr>',
                       $content
                     );
+                    $content = str_replace(
+                      '] Default</label>',
+                      '] Default</label>
+<tr>
+<td style="width: 40%; vertical-align: top;" class="adm-detail-content-cell-l">
+Комментарий к статусу		</td>
+<td class="adm-detail-content-cell-r">
+<textarea name="form_textarea_' . key(
+                        $arAnswer2["comment_status"]
+                      ) . '" cols="40" rows="5" class="inputtextarea">' . current(
+                        $arAnswer2['comment_status']
+                      )['USER_TEXT'] . '</textarea><br>		</td>
+</tr>',
+                      $content
+                    );
                 } else {
                     $content = str_replace(
                       '<tr>
