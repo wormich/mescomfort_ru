@@ -1559,7 +1559,6 @@ class FormQuestionsList
     {
         if (
           $GLOBALS['APPLICATION']->GetCurPage() == '/bitrix/admin/form_result_edit.php'
-          && $_GET['WEB_FORM_ID'] == self::WEB_FORM_ID
         ) {
             global $USER;
             $content = ob_get_contents();
