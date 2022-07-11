@@ -1575,7 +1575,7 @@ class FormQuestionsList
             if (!$USER->isAdmin()) {
                 if (!empty($arAnswer2)) {
                     foreach ($arAnswer2 as $key => $value) {
-                        if ($key == 'comment') {
+                        if ($key == 'comment' || $key == 'message') {
                             $content = str_replace(
                               'name="form_textarea_' . key($value) . '"',
                               'name="form_textarea_' . key($value) . '" disabled',
