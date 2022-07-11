@@ -119,7 +119,7 @@ function dw_onAfterResultUpdate($WEB_FORM_ID, $RESULT_ID, $CHECK_RIGHTS)
     }
     if ($WEB_FORM_ID == Constants::NEW_SERVICE_REVIEW) {
         $arVALUE = array();
-        $FIELD_SID = 'OPERATORS_NAME'; // символьный идентификатор вопроса
+        $FIELD_SID = 'operator_name'; // символьный идентификатор вопроса
         $ANSWER_ID = 46; // ID поля ответа
         $arVALUE[$ANSWER_ID] = $arUser['NAME'] . ' ' . $arUser['LAST_NAME'];
         CFormResult::SetField($RESULT_ID, $FIELD_SID, $arVALUE);
