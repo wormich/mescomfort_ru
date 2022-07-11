@@ -1616,8 +1616,8 @@ class FormQuestionsList
                       $content
                     );
                     $content = str_replace(
-                      '] Default</label>',
-                      '] Default</label>
+                      '] Нужен ответ пользователя</label>',
+                      '] Нужен ответ пользователя</label>
 <tr>
 <td style="width: 40%; vertical-align: top;" class="adm-detail-content-cell-l">
 Комментарий к статусу		</td>
