@@ -1646,4 +1646,15 @@ class FormQuestionsList
             echo $content;
         }
     }
+
+    public function removeMenuItems(&$aGlobalMenu, &$aModuleMenu) {
+        global $USER;
+        if (!$USER->isAdmin()) {
+            foreach ($aModuleMenu as $key=>&$menu) {
+                if($menu['parent_menu'] == 'global_menu_services') {
+                    unset($menu['items'][1]);
+                }
+            }
+        }
+    }
 }

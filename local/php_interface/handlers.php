@@ -223,6 +223,7 @@ AddEventHandler('form', 'onAfterResultAdd', '\Local\Form\FormQuestionsList::WebF
 AddEventHandler('form', 'onAfterResultUpdate', '\Local\Form\FormQuestionsList::WebFormAdminResult');
 AddEventHandler("main", "OnAdminContextMenuShow", "\Local\Form\FormQuestionsList::FormQuestionListCSVMenu");
 AddEventHandler("main", "OnEpilog", "\Local\Form\FormQuestionsList::EndBuffer");
+AddEventHandler("main", "OnBuildGlobalMenu", "\Local\Form\FormQuestionsList::removeMenuItems");
 
 
 AddEventHandler("iblock", "OnAfterIBlockElementAdd", "\Local\Iblock\IblockServicesList::saveItemsToFormAfterUpdate");
