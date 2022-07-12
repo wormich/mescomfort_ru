@@ -221,7 +221,7 @@ function onBeforePropHandler(&$arFields)
 AddEventHandler("main", "OnAdminTabControlBegin", "\Local\Form\FormQuestionsList::WebFormOnAdminTabControlBegin");
 AddEventHandler('form', 'onAfterResultAdd', '\Local\Form\FormQuestionsList::WebFormAdminResult');
 AddEventHandler('form', 'onAfterResultUpdate', '\Local\Form\FormQuestionsList::WebFormAdminResult');
-AddEventHandler("main", "OnAdminContextMenuShow", "\Local\Form\FormQuestionsList::FormQuestionListCSVMenu");
+AddEventHandler("main", "OnAdminContextMenuShow", "\Local\Form\FormQuestionsList::removeFormButtons");
 AddEventHandler("main", "OnEpilog", "\Local\Form\FormQuestionsList::EndBuffer");
 AddEventHandler("main", "OnBuildGlobalMenu", "\Local\Form\FormQuestionsList::removeMenuItems");
 

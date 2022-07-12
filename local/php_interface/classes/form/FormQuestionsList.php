@@ -1278,22 +1278,23 @@ class FormQuestionsList
      * Добавление кнопки на скачивание CSV с данными анкеты
      * @param $items
      */
-    public function FormQuestionListCSVMenu(&$items)
+    public function removeFormButtons(&$items)
     {
-        if (
-          $GLOBALS["APPLICATION"]->GetCurPage(true) == "/bitrix/admin/form_result_edit.php"
-          && $_GET['WEB_FORM_ID'] == self::WEB_FORM_ID
-          && current($items)['TEXT'] != 'Параметры формы'
-          && !empty($_GET['RESULT_ID'])
-        ) {
-            $link = "/local/php_interface/include/csv_question.php?FORM_ID=" . self::WEB_FORM_ID . '&RESULT_ID=' . $_GET['RESULT_ID'];
-
-            $items[] = array(
-              "TEXT" => self::CSV_BUTTON_NAME,
-              "ICON" => 'adm-menu-excel',
-              "TITLE" => self::CSV_BUTTON_TITLE,
-              "LINK" => $link
-            );
+        global $USER;
+        if (!$USER->isAdmin()) {
+            if (
+              $GLOBALS["APPLICATION"]->GetCurPage(true) == "/bitrix/admin/form_result_edit.php"
+              && current($items)['TEXT'] != 'Параметры формы'
+              && !empty($_GET['RESULT_ID'])
+            ) {
+                $items = [];
+            } else {
+                foreach ($items as $key => $item) {
+                    if (!mb_stristr($item['TEXT'], 'Результаты')) {
+                        unset($items[$key]);
+                    }
+                }
+            }
         }
     }
 
