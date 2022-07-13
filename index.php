@@ -1487,8 +1487,8 @@ $APPLICATION->SetTitle("");
     <section class="s-services">
         <div class="wrap">
             <h3 class="_centered _upper"><b>Дополнительные услуги</b></h3>
-            <div class="just">
-                <div class="point s-services__item">
+            <div class="just" style="text-align:center">
+                <!--<div class="point s-services__item">
                     <a href="http://mnogotarifnik.ru/" target="_blank">
                         <div class="point__img">
                             <img src="/local/templates/landingMesComfort/img/tmb_147090153281.png" alt="">
@@ -1497,7 +1497,7 @@ $APPLICATION->SetTitle("");
                             Установка приборов учёта электроэнергии
                         </div>
                     </a>
-                </div>
+                </div>-->
                 <div class="point s-services__item">
                     <a href="http://mes-elektrik.ru/" target="_blank">
                         <div class="point__img">
