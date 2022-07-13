@@ -182,8 +182,7 @@ function ASDFavoriteOnBuildGlobalMenu(&$aGlobalMenu, &$aModuleMenu)
 
     if (in_array(12, $arUserGroups)) {
         foreach ($aModuleMenu as $k => $v) {
-            if($v['section'] == 'iblock' || $v['text'] === 'Списки' || $v['text'] === 'Тестовый модуль')
-            {
+            if ($v['section'] == 'iblock' || $v['text'] === 'Списки' || $v['text'] === 'Тестовый модуль') {
                 unset($aModuleMenu[$k]);
             }
         }
@@ -191,8 +190,7 @@ function ASDFavoriteOnBuildGlobalMenu(&$aGlobalMenu, &$aModuleMenu)
 
     if (in_array($group['ID'], $arUserGroups)) {
         foreach ($aModuleMenu as $k => $v) {
-            if($v['section'] == 'iblock' || $v['text'] === 'Списки' || $v['text'] === 'Тестовый модуль')
-            {
+            if ($v['section'] == 'iblock' || $v['text'] === 'Списки' || $v['text'] === 'Тестовый модуль') {
                 unset($aModuleMenu[$k]);
             }
         }
@@ -250,15 +248,16 @@ function OnAdminContextMenuShowExcel(&$items)
             'find_SIMPLE_FORM_6_subservices_USER_text' => $_REQUEST['find_SIMPLE_FORM_6_subservices_USER_text'],
             'find_SIMPLE_FORM_6_mail_USER_text' => $_REQUEST['find_SIMPLE_FORM_6_mail_USER_text'],
         ];
-
-        if (current($items)['ICON'] === 'btn_new') {
-            $items[] = [
-                'TEXT' => 'Экспортировать в Excel',
-                'TITLE' => 'Экспортировать в Excel',
-                'ICON' => 'adm-menu-excel',
-                // 'LINK' => '/local/php_interface/include/form_xls_generate.php?WEB_FORM_ID=' . $_REQUEST['WEB_FORM_ID']
-                'LINK' => '/local/php_interface/include/form_xls_generate_fixed.php?' . http_build_query($arQuery)
-            ];
-        }
+        /*
+                if (current($items)['ICON'] === 'btn_new') {
+                    $items[] = [
+                        'TEXT' => 'Экспортировать в Excel',
+                        'TITLE' => 'Экспортировать в Excel',
+                        'ICON' => 'adm-menu-excel',
+                        // 'LINK' => '/local/php_interface/include/form_xls_generate.php?WEB_FORM_ID=' . $_REQUEST['WEB_FORM_ID']
+                        'LINK' => '/local/php_interface/include/form_xls_generate_fixed.php?' . http_build_query($arQuery)
+                    ];
+                }
+        */
     }
 }
