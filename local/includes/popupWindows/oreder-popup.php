@@ -82,6 +82,7 @@
             </label>
         </div>
         <input type="hidden" name="username" value="<?= getControlStringHash() ?>">
+
         <div style="display:none">
             <input type="text" name="last_name" value="">
             <input type="text" name="age" value="">
