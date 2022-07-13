@@ -25,9 +25,10 @@ require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_bef
 
 $FORM_ID=4;
 $arHashRND = [];
+$arHashes = [];
 CModule::IncludeModule("form");
 CModule::IncludeModule("iblock");
-if (!$_REQUEST['hash']) {
+if (!$_REQUEST['username']) {
     echo json_encode(['type'=>'error', 'data'=>'Ошибка отправки, возможно установлен бот рассылки!'], JSON_UNESCAPED_UNICODE);
 exit;
 }
@@ -35,6 +36,12 @@ $returnFromCI = CIBlockElement::GetList([],['IBLOCK_ID' => 29,'NAME' => trim($_R
 while ($arControlHashRND = $returnFromCI->Fetch())
 {
     $arHashRND[]=$arControlHashRND;
+    $arHashes[] = $arControlHashRND['NAME'];
+}
+
+if (!in_array($_REQUEST['username'], $arHashes)) {
+    echo json_encode(['type' => 'error', 'data' => 'Ошибка отправки, возможно установлен бот рассылки!'], JSON_UNESCAPED_UNICODE);
+    exit;
 }
 $arValues = array (
     "form_text_34"                 => $_REQUEST['name'],

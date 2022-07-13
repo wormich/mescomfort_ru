@@ -79,7 +79,7 @@
                 Я даю согласие на обработку своих персональных данных в соответствии с <a href="/files/agreement_personal.pdf" target="_blank">Положением об организации обработки и защиты персональных данных клиентов АО «Мосэнергосбыт»</a>
             </label>
         </div>
-      <input type="hidden" name="hash" value="<?=getControlStringHash()?>">
+      <input type="hidden" name="username" value="<?=getControlStringHash()?>">
         <div class="submit"> <!--onclick="yaCounter38950510.reachGoal('zakaz'); return true;"-->
             <input type="submit" value="Оставить заявку" class="b-btn _btn">
         </div>

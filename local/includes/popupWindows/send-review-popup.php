@@ -11,7 +11,7 @@
         <div class="field">
             <textarea placeholder="Ваш отзыв" name="msg"></textarea>
         </div>
-       <input type="hidden" name="hash" value="<?=getControlStringHash()?>">
+       <input type="hidden" name="username" value="<?=getControlStringHash()?>">
         <input type="hidden" name="form_text_user_ip" value="<?= \Bitrix\Main\Service\GeoIp\Manager::getRealIp() ?>">
         <div class="submit">
             <input type="submit" value="Отправить" class="b-btn _btn">

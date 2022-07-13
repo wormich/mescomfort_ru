@@ -1455,7 +1455,7 @@ $APPLICATION->SetTitle("");
 <!--			<div class="g-recaptcha" id="g-recaptcha-order_page">-->
 			</div>
 		</div>
-  <input type="hidden" name="hash" value="<?=getControlStringHash()?>">
+  <input type="hidden" name="username" value="<?=getControlStringHash()?>">
 		<div class="submit">
  <input type="submit" onclick="yaCounter38950510.reachGoal('zakaz'); return true;" value="Оставить заявку" class="b-btn _btn">
 		</div>
