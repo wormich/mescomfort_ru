@@ -100,7 +100,7 @@ class Handlers
                 'ID' => $RESULT_ID,
                 'FIO' => $arAnswer[$name][0]['USER_TEXT'],
                 'DATE_CREATE' => date('d.m.Y H:i:s'),
-                'SERVICE_NAME' => $arAnswer['service'][0]['USER_TEXT'] . '. ' . $arAnswer['subservices'][0]['ANSWER_TEXT'],
+                'SERVICE_NAME' => $arAnswer['SIMPLE_QUESTION_367'][0]['USER_TEXT'],
                 'SUBJECT' => \Bitrix\Main\Config\Option::get('dw.devino', 'company') . '. Мы приняли вашу заявку №'.$RESULT_ID
             ]);
         }
