@@ -30,7 +30,7 @@ $arHashRND = [];
 $arHashes = [];
 CModule::IncludeModule("form");
 CModule::IncludeModule("iblock");
-if (!$_REQUEST['username']) {
+if (!$_REQUEST['username'] || $_REQUEST['age'] || $_REQUEST['last_name']) {
     echo json_encode(['type' => 'error', 'data' => 'Ошибка отправки, возможно установлен бот рассылки!'], JSON_UNESCAPED_UNICODE);
     exit;
 }

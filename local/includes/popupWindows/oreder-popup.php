@@ -69,17 +69,23 @@
             <div class="city-status"></div>
         </div>
         <div class="form-note"><b>Минимальная сумма заказа - 50 000 рублей.</b></div>
-<!--        <div class="captcha-wrapper">-->
-<!--            <div class="captcha-error captcha-error&#45;&#45;js">Необходимо правильно заполнить капчу!</div>-->
-<!--            <div class="g-recaptcha" id="g-recaptcha-order"></div>-->
-<!--        </div>-->
+        <!--        <div class="captcha-wrapper">-->
+        <!--            <div class="captcha-error captcha-error&#45;&#45;js">Необходимо правильно заполнить капчу!</div>-->
+        <!--            <div class="g-recaptcha" id="g-recaptcha-order"></div>-->
+        <!--        </div>-->
         <div class="tsaf-agreement tsaf-agreement--js">
             <input type="checkbox" name="agreement" id="input-tsaf-agreement" value="Да">
             <label for="input-tsaf-agreement" class="tsaf-agreement__label tsaf-agreement__label--js">
-                Я даю согласие на обработку своих персональных данных в соответствии с <a href="/files/agreement_personal.pdf" target="_blank">Положением об организации обработки и защиты персональных данных клиентов АО «Мосэнергосбыт»</a>
+                Я даю согласие на обработку своих персональных данных в соответствии с <a
+                        href="/files/agreement_personal.pdf" target="_blank">Положением об организации обработки и
+                    защиты персональных данных клиентов АО «Мосэнергосбыт»</a>
             </label>
         </div>
-      <input type="hidden" name="username" value="<?=getControlStringHash()?>">
+        <input type="hidden" name="username" value="<?= getControlStringHash() ?>">
+        <div style="display:none">
+            <input type="text" name="last_name" value="">
+            <input type="text" name="age" value="">
+        </div>
         <div class="submit"> <!--onclick="yaCounter38950510.reachGoal('zakaz'); return true;"-->
             <input type="submit" value="Оставить заявку" class="b-btn _btn">
         </div>
