@@ -1,13 +1,9 @@
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("");
-
-//// блок 1
-
-
 ?>
-    <!--- блок 1-->
-    <section class="section s-start">
+
+<section class="section s-start">
         <div class="wrapper">
             <div class="promo-top">
                 <div class="cf">
@@ -255,7 +251,6 @@ $APPLICATION->SetTitle("");
 ); ?>
 
 
-
 <?
 $APPLICATION->IncludeComponent(
     "realweb:base.include",
@@ -267,11 +262,10 @@ $APPLICATION->IncludeComponent(
     ),
     false,
     array(
-        "SHOW_ICON" =>  'N',
+        "SHOW_ICON" => 'N',
     )
 );
 ?>
-    <!---блок 10-->
 
     <section class="s-order">
         <div class="wrap">
@@ -441,46 +435,22 @@ $APPLICATION->IncludeComponent(
     -->
     </section>
 
-    <!---блок 11-->
 
-    <section class="s-services">
-        <div class="wrap">
-            <h3 class="_centered _upper"><b>Дополнительные услуги</b></h3>
-            <div class="just" style="text-align:center">
-                <!--<div class="point s-services__item">
-                    <a href="http://mnogotarifnik.ru/" target="_blank">
-                        <div class="point__img">
-                            <img src="/local/templates/landingMesComfort/img/tmb_147090153281.png" alt="">
-                        </div>
-                        <div class="point__name">
-                            Установка приборов учёта электроэнергии
-                        </div>
-                    </a>
-                </div>-->
-                <div class="point s-services__item">
-                    <a href="http://mes-elektrik.ru/" target="_blank">
-                        <div class="point__img">
-                            <img src="/local/templates/landingMesComfort/img/tmb_147090153756.png" alt="">
-                        </div>
-                        <div class="point__name">
-                            Электромонтажные работы
-                        </div>
-                    </a>
-                </div>
-                <div class="point s-services__item">
-                    <a href="http://www.voduberegi.ru/" target="_blank">
-                        <div class="point__img">
-                            <img src="/local/templates/landingMesComfort/img/tmb_147090154226.png" alt="">
-                        </div>
-                        <div class="point__name">
-                            Сантехнические работы, в том числе установка и поверка водосчётчиков
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <a href="http://mes-elektrik.ru/" target="_blank">
 
-    </a>
+<?
+$APPLICATION->IncludeComponent(
+    "realweb:base.include",
+    "",
+    array(
+        "CODE" => 'BOTTOM_LINKS',
+        "COMPONENT_TEMPLATE" => ".default",
+        "EDIT_TEMPLATE" => ""
+    ),
+    false,
+    array(
+        "SHOW_ICON" => 'N',
+    )
+);
+?>
+
 <? require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
