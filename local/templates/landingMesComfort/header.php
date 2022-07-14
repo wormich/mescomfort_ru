@@ -9,7 +9,6 @@ IncludeTemplateLangFile(__FILE__);
     <title>МЭС-КОМФОРТ - Ремонт любой сложности от профессионалов!</title>
     <meta name="keywords" content="МЭС-КОМФОРТ" />
     <meta name="description" content="Капитальный подход к любому клиенту. До 15 июля эскизный дизайн-проект в подарок! Бесплатный выезда мастера по Москвe. Гарантия 2 года. +7 (495) 988-31- 99, Москва и Московская область">
-    <!--    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
     <?$APPLICATION->ShowHead();?>
     <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/jquery.fancybox.css">
     <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/styles.css?v=0.9">
@@ -36,18 +35,24 @@ IncludeTemplateLangFile(__FILE__);
 <?$APPLICATION->ShowPanel()?>
 <header class="header">
     <div class="wrapper cf">
-        <div class="header__logo"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt=""></div>
+        <div class="header__logo"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt="МЭС-КОМФОРТ - Ремонт любой сложности"></div>
         <div class="header__phone"><span class="icon-phone"></span><span class="phone">
-                <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
+
+                <?
+                $APPLICATION->IncludeComponent(
+                    "realweb:base.include",
                     "",
-                    Array(
-                        "AREA_FILE_SHOW" => "file",
-                        "AREA_FILE_SUFFIX" => "inc",
-                        "EDIT_TEMPLATE" => "",
-                        "PATH" => "/local/includes/section/header/phone.php"
+                    array(
+                        "CODE" => 'PHONE',
+                        "COMPONENT_TEMPLATE" => ".default",
+                        "EDIT_TEMPLATE" => ""
+                    ),
+                    false,
+                    array(
+                        "SHOW_ICON" =>  'N',
                     )
-                );?>
+                );
+                ?>
                 </b></span><div><a href="#order-popup" class="b-btn open-popup">оставить заявку</a></div></div>
     </div>
 </header>

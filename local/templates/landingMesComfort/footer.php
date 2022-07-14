@@ -1,10 +1,42 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <footer class="footer">
     <div class="wrap cf">
-        <div class="footer__copyright">Copyright © 2022 МЭС-КОМФОРТ <br>Все права защищены</div>
-        <div class="footer__call">Контактный центр <br>+7 (499) 550-33-55</div>
+        <div class="footer__copyright">Copyright © <?=date('Y')?> МЭС-КОМФОРТ <br>Все права защищены</div>
+        <div class="footer__call">
+
+            <?
+            $APPLICATION->IncludeComponent(
+                "realweb:base.include",
+                "",
+                array(
+                    "CODE" => 'CONT',
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "EDIT_TEMPLATE" => ""
+                ),
+                false,
+                array(
+                    "SHOW_ICON" =>  'N',
+                )
+            );
+            ?>
+
+        </div>
         <div class="footer__cta"><a href="#send-review-popup" class="b-btn open-popup">Оставить отзыв о ремонте</a></div>
-        <div class="footer__address">г. Москва, ул.Вавилова, 9</div>
+        <div class="footer__address"><?
+            $APPLICATION->IncludeComponent(
+                "realweb:base.include",
+                "",
+                array(
+                    "CODE" => 'ADR',
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "EDIT_TEMPLATE" => ""
+                ),
+                false,
+                array(
+                    "SHOW_ICON" =>  'N',
+                )
+            );
+            ?></div>
     </div>
 </footer>
 
