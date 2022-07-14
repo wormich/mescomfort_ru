@@ -684,7 +684,7 @@ textarea {
 }
 .section__pin_spec {
   position: absolute;
-  top:-30px;
+  top:0px;
   right:270px;
 }
 
