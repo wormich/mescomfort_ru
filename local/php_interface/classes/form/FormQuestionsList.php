@@ -1579,7 +1579,7 @@ class FormQuestionsList
                         if ($key == 'comment' || $key == 'message') {
                             $content = str_replace(
                               'name="form_textarea_' . key($value) . '"',
-                              'name="form_textarea_' . key($value) . '" disabled',
+                              'name="form_textarea_' . key($value) . '" readonly',
                               $content
                             );
                         }
@@ -1597,7 +1597,7 @@ class FormQuestionsList
                         }
                         $content = str_replace(
                           'name="form_text_' . key($value) . '"',
-                          'name="form_text_' . key($value) . '" disabled',
+                          'name="form_text_' . key($value) . '" readonly',
                           $content
                         );
                     }
