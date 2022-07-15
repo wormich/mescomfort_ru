@@ -1425,11 +1425,11 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   .section__pin_spec {
     right: 0 !important;
   }
-  .s-profitability .s-profitability__item {
+  .s-profitability .s-profitability__item, .s-services .s-services__item {
     margin: 15px;
-    width: 195px;
+    width: 195px !important;
   }
-  .s-profitability .just {
+  .s-profitability .just, .s-services .just {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1457,7 +1457,7 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   .b-section._medium {
     margin: 10px 6px;
   }
-  .s-profitability .s-profitability__item {
+  .s-profitability .s-profitability__item, .s-services .s-services__item {
     margin-bottom: 15px;
   }
 }
