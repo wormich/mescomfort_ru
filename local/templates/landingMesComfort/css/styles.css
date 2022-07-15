@@ -1504,6 +1504,12 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   footer .cf::before, footer .cf::after {
     content: none;
   }
+  #order-popup {
+    width: inherit !important;
+  }
+  .field._half {
+    min-width: 300px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width:678px) {
   .wrapper {
