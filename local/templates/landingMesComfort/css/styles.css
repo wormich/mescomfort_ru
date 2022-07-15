@@ -1425,6 +1425,16 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   .section__pin_spec {
     right: 0 !important;
   }
+  .s-profitability .s-profitability__item {
+    margin: 15px;
+    width: 195px;
+  }
+  .s-profitability .just {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 28px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width:1075px) {
   .s-start::before {
@@ -1446,6 +1456,9 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   }
   .b-section._medium {
     margin: 10px 6px;
+  }
+  .s-profitability .s-profitability__item {
+    margin-bottom: 15px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width:863px) {
