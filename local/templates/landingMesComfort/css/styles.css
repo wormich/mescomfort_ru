@@ -1351,3 +1351,125 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   color: #C0181F;
 }
 /* Promo stop top of the page 09.01.2019 */
+
+@media only screen and (min-width: 0px) and (max-width:1205px) {
+  body, body .header {
+    min-width: inherit !important;
+  }
+  .s-start {
+    height: unset !important;
+  }
+  .s-start__list.cf {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .s-start::before {
+    background: url("../img/startbg.png") 100% 100% no-repeat;
+    background-size: 80%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width:1157px) {
+  .s-start::before {
+    background: url("../img/startbg.png") 40% 184% no-repeat;
+    background-size: inherit;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width:1075px) {
+  .s-start::before {
+    background: none;
+  }
+  .header__logo {
+    width: 60% !important;
+  }
+  .wrapper {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    padding: 6px 0 0 0;
+  }
+  .s-start__list.cf {
+    margin-top: 20px;
+  }
+  .b-section._medium {
+    margin: 10px 6px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width:863px) {
+  .s-start__rside {
+    padding: 22px 0 17px 28px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width:678px) {
+  .wrapper {
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width:643px) {
+  .header__phone {
+    text-align: center;
+  }
+  header .wrapper {
+    text-align: center;
+  }
+  header .header__logo {
+    width: inherit;
+  }
+  .header__logo img {
+    height: 40px;
+  }
+  .s-start {
+    padding: 185px 0 0 0;
+  }
+}
+@media only screen and (max-width:560px) {
+  .s-start__form {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .s-start select {
+    width: inherit;
+  }
+  .b-btn._premedium {
+    min-width: inherit;
+    padding: 15px 10px;
+  }
+  .section.s-start > .wrapper {
+    flex-direction: inherit;
+  }
+  .s-start__lside {
+    width: inherit;
+    padding: 22px 28px 0 28px;
+  }
+}
+@media only screen and (max-width:532px) {
+  .b-btn._premedium {
+    margin-top: 20px;
+    width: 100%
+  }
+  .s-start select {
+    width: 100%;
+    margin: 0;
+  }
+  .s-start__rside {
+    width: inherit;
+    padding: 22px 28px 22px 28px;
+  }
+  .s-start__bb {
+    width: inherit;
+  }
+  .s-start__lside, .s-start__rside {
+    float: inherit;
+  }
+  .s-start__name {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width:499px) {
+  .header__logo {
+    width: inherit !important;
+  }
+}
