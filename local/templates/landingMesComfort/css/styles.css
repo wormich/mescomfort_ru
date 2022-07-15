@@ -1460,6 +1460,9 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   .s-profitability .s-profitability__item, .s-services .s-services__item {
     margin-bottom: 15px;
   }
+  .footer {
+    padding: 60px 28px !important;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width:863px) {
   .s-start__rside {
@@ -1474,6 +1477,32 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   }
   .section__pin_spec {
     width: 115px;
+  }
+  footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer__copyright {
+    width: inherit;
+    float: inherit;
+    padding: 10px 10px;
+  }
+  .footer__call {
+    width: inherit;
+    float: inherit;
+    padding: 10px 10px;
+  }
+  .footer__cta {
+    float: inherit;
+    padding: 10px 10px;
+  }
+  .footer__address {
+    float: inherit;
+    padding: 10px 10px;
+  }
+  footer .cf::before, footer .cf::after {
+    content: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width:678px) {
