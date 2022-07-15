@@ -1091,46 +1091,46 @@ textarea {
 .popup__note {
   font-size: 18px;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	#order-popup{
-		width:900px;
-		padding-left:30px;
-		padding-right:30px;
-	}
-	.popup h3{
-		font-size:80px;
-		padding-bottom:40px;
-	}
-	.popup .field._half, .order-form2 .field._half{
-		margin:0 0 20px;
-		display:block;
-		width:auto;
-	}
-	.popup input[type="text"], .popup select, .order-form2 input[type="text"], .order-form2 select{
-		font-size:40px;
-		height:auto;
-		padding:10px;
-	}
-	.popup .form-note{
-		font-size:30px;
-		padding-bottom:30px;
-	}
-	.order-form2 .form-note{
-		font-size:18px;
-		padding-bottom:30px;
-	}
-	.popup .b-btn._btn, .order-form2 .b-btn._btn{
-		font-size:40px;
-	}
-	.popup .city-status {
-		font-size:30px;
-		text-align:center;
-	}
-	.order-form2 .city-status{
-		font-size:18px;
-		text-align:center;
-	}
-}
+/*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {*/
+/*	#order-popup{*/
+/*		width:900px;*/
+/*		padding-left:30px;*/
+/*		padding-right:30px;*/
+/*	}*/
+/*	.popup h3{*/
+/*		font-size:80px;*/
+/*		padding-bottom:40px;*/
+/*	}*/
+/*	.popup .field._half, .order-form2 .field._half{*/
+/*		margin:0 0 20px;*/
+/*		display:block;*/
+/*		width:auto;*/
+/*	}*/
+/*	.popup input[type="text"], .popup select, .order-form2 input[type="text"], .order-form2 select{*/
+/*		font-size:40px;*/
+/*		height:auto;*/
+/*		padding:10px;*/
+/*	}*/
+/*	.popup .form-note{*/
+/*		font-size:30px;*/
+/*		padding-bottom:30px;*/
+/*	}*/
+/*	.order-form2 .form-note{*/
+/*		font-size:18px;*/
+/*		padding-bottom:30px;*/
+/*	}*/
+/*	.popup .b-btn._btn, .order-form2 .b-btn._btn{*/
+/*		font-size:40px;*/
+/*	}*/
+/*	.popup .city-status {*/
+/*		font-size:30px;*/
+/*		text-align:center;*/
+/*	}*/
+/*	.order-form2 .city-status{*/
+/*		font-size:18px;*/
+/*		text-align:center;*/
+/*	}*/
+/*}*/
 #order-popup {
   width: 760px;
 }
@@ -1565,8 +1565,11 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
     display: block;
   }
 }
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:370px) {
   .section__pin_spec {
     width: 50px;
+  }
+  .field._half {
+    min-width: 280px;
   }
 }
