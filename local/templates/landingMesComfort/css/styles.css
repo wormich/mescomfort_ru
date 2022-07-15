@@ -1507,6 +1507,15 @@ label.error {display:block;color:red;font-size:12px;margin-top:3px;text-align:le
   #order-popup {
     width: inherit !important;
   }
+  #send-review-popup {
+    max-width: 100% !important;
+  }
+  #thanks-popup {
+    max-width: 100% !important;
+  }
+  #thanks-popup2 {
+    max-width: 100% !important;
+  }
   .field._half {
     min-width: 300px;
   }
