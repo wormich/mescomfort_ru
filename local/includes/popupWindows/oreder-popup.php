@@ -74,12 +74,11 @@
         <!--            <div class="g-recaptcha" id="g-recaptcha-order"></div>-->
         <!--        </div>-->
         <div class="tsaf-agreement tsaf-agreement--js">
-            <input type="checkbox" name="agreement" id="input-tsaf-agreement" value="Да">
-            <label for="input-tsaf-agreement" class="tsaf-agreement__label tsaf-agreement__label--js">
-                Я даю согласие на обработку своих персональных данных в соответствии с <a
-                        href="/files/agreement_personal.pdf" target="_blank">Положением об организации обработки и
-                    защиты персональных данных клиентов АО «Мосэнергосбыт»</a>
-            </label>
+            <div class="tsaf-agreement tsaf-agreement--js">
+                <label for="input-tsaf-agreement" class="tsaf-agreement__label tsaf-agreement__label--js">
+                    Я <a href="/upload/agreement_personal.pdf" target="_blank">даю согласие на обработку своих персональных данных</a>
+                </label>
+            </div>
         </div>
         <input type="hidden" name="username" value="<?= getControlStringHash() ?>">
 

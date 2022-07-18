@@ -406,6 +406,11 @@ $APPLICATION->IncludeComponent(
                 <div class="form-note">
                     <b>Минимальная сумма заказа - 50 000 рублей.</b>
                 </div>
+                <div class="tsaf-agreement tsaf-agreement--js">
+                    <label for="input-tsaf-agreement" class="tsaf-agreement__label tsaf-agreement__label--js">
+                        Я <a href="/upload/agreement_personal.pdf" target="_blank">даю согласие на обработку своих персональных данных</a>
+                    </label>
+                </div>
                 <div class="captcha-wrapper">
                     <div class="captcha-error captcha-error--js">
                         Необходимо правильно заполнить капчу!
