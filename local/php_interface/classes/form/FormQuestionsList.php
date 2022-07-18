@@ -1652,7 +1652,6 @@ class FormQuestionsList
     {
         global $USER;
         if (!$USER->isAdmin()) {
-            unset($aGlobalMenu['global_menu_content']);
             foreach ($aModuleMenu as $key => &$menu) {
                 if ($menu['parent_menu'] == 'global_menu_services') {
                     unset($menu['items'][1]);

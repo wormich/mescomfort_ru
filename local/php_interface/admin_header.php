@@ -120,3 +120,5 @@
         })
     }
 </script>
+<?php
+unset($adminMenu->aGlobalMenu["global_menu_content"]);
