@@ -1648,11 +1648,13 @@ class FormQuestionsList
         }
     }
 
-    public function removeMenuItems(&$aGlobalMenu, &$aModuleMenu) {
+    public function removeMenuItems(&$aGlobalMenu, &$aModuleMenu)
+    {
         global $USER;
         if (!$USER->isAdmin()) {
-            foreach ($aModuleMenu as $key=>&$menu) {
-                if($menu['parent_menu'] == 'global_menu_services') {
+            unset($aGlobalMenu['global_menu_content']);
+            foreach ($aModuleMenu as $key => &$menu) {
+                if ($menu['parent_menu'] == 'global_menu_services') {
                     unset($menu['items'][1]);
                 }
             }
