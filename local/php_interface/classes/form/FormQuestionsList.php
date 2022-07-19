@@ -1571,7 +1571,7 @@ class FormQuestionsList
               $result,
               $arAnswer2
             );
-            $content = str_replace('Поля результата', 'Данные от клиента', $content);
+            $content = str_replace('Поля результата', 'Данные клиента', $content);
 
             if (!$USER->isAdmin()) {
                 if (!empty($arAnswer2)) {
