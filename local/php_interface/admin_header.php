@@ -121,4 +121,7 @@
     }
 </script>
 <?php
-unset($adminMenu->aGlobalMenu["global_menu_content"]);
+global $USER;
+if (!$USER->isAdmin()) {
+    unset($adminMenu->aGlobalMenu["global_menu_content"]);
+}
