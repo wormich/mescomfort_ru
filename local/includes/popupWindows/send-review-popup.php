@@ -13,7 +13,7 @@
         </div>
         <div class="tsaf-agreement tsaf-agreement--js">
             <label for="input-tsaf-agreement" class="tsaf-agreement__label tsaf-agreement__label--js">
-                Я <a href="/upload/agreement_personal.pdf" target="_blank">даю согласие на обработку своих персональных данных</a>
+                Нажимая кнопку, я <a href="/upload/agreement_personal.pdf" target="_blank">даю согласие на обработку своих персональных данных</a>
             </label>
         </div>
        <input type="hidden" name="username" value="<?=getControlStringHash()?>">
